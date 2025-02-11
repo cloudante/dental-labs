@@ -1,0 +1,34 @@
+church-website/
+├── src/
+│   ├── components/
+│   │   ├── layout/
+│   │   │   ├── Header.jsx
+│   │   │   ├── Footer.jsx
+│   │   │   └── Navigation.jsx
+│   │   ├── home/
+│   │   │   ├── HeroSlider.jsx
+│   │   │   ├── QuickLinks.jsx
+│   │   │   ├── NoticeBoard.jsx
+│   │   │   ├── ResourceSection.jsx
+│   │   │   ├── LatestVideos.jsx
+│   │   │   └── DailyQT.jsx
+│   │   ├── pages/
+│   │   │   ├── Home.jsx
+│   │   │   ├── About.jsx
+│   │   │   ├── Sermons.jsx
+│   │   │   ├── Community.jsx
+│   │   │   ├── Ministry.jsx
+│   │   │   └── Contact.jsx
+│   │   ├── assets/
+│   │   │   ├── images/
+│   │   │   └── icons/
+│   │   ├── styles/
+│   │   │   └── globals.css
+│   │   ├── utils/
+│   │   │   └── constants.js
+│   │   └── App.jsx
+│   ├── public/
+│   │   └── index.html
+│   ├── tailwind.config.js
+│   ├── package.json
+│   └── README.md 
