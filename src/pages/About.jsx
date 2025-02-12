@@ -82,13 +82,13 @@ const About = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-blue-900 text-white">
+      <section className="py-16 bg-[#cddbfa] text-[#3a73f2]">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-6">
             Meet Core Dental Studio's<br />
             CAD/CAM specialists today
           </h2>
-          <button className="bg-white text-blue-900 px-8 py-3 rounded-md hover:bg-gray-100 transition-colors">
+          <button className="bg-[#3a73f2] text-white  px-8 py-3 rounded-md hover:bg-blue-700 transition-colors">
             Contact Us
           </button>
         </div>

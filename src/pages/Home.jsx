@@ -1,105 +1,210 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative h-[600px] md:h-[700px]">
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-900 to-blue-800">
-          <img 
-            src="/main-img.jpg" 
-            alt="Digital Dental Excellence" 
-            className="w-full h-full object-cover opacity-40"
-          />
-        </div>
-        <div className="relative container mx-auto px-4 py-20 text-white">
-          <h1 className="text-4xl md:text-6xl font-bold mb-4">
-            Digital Dental<br />
-            Excellence
-          </h1>
-          <p className="text-xl text-gray-200 mb-8 max-w-xl">
-            Leading the advancement of laboratories with innovative technology and precision-driven digital dental solutions.
-          </p>
-          <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-md">
-            Contact Us
-          </button>
+      <section className="py-16">
+        <div className="container mx-auto px-4">
+          <div className="relative bg-[#3a73f2] rounded-lg overflow-hidden aspect-[16/9]">
+            {/* Background Image */}
+            <div className="absolute inset-0">
+              <img 
+                src="/hero-dental.jpg" 
+                alt="Digital Dental Excellence" 
+                className="w-full h-full object-cover opacity-30 mix-blend-overlay"
+              />
+            </div>
+            
+            {/* Content */}
+            <div className="relative h-full flex flex-col justify-center p-12 md:p-16">
+              <div className="max-w-2xl space-y-8">
+                <h1 className="text-5xl md:text-7xl font-bold">
+                  <span className="text-white">Digital Dental</span><br />
+                  <span className="text-gray-900">Excellence</span>
+                </h1>
+                <Link 
+                  to="/contact" 
+                  className="inline-block bg-white text-[#3a73f2] px-12 py-3 rounded-md hover:bg-gray-100 transition-colors text-lg"
+                >
+                  Contact
+                </Link>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
       {/* About Section */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">Core Dental Studio</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <FeatureCard 
-              title="Leading Digital Solutions"
-              description="Core Dental Studio offers precision-driven digital dental solutions, leading the advancement of laboratories."
-            />
-            <FeatureCard 
-              title="Skilled Professionals"
-              description="Established in 2015, our adept team crafts superior products meticulously, ensuring client satisfaction."
-            />
-            <FeatureCard 
-              title="Comprehensive Services"
-              description="From Zirconia crowns to dental implants, we provide a wide range of premium alternatives."
-            />
-            <FeatureCard 
-              title="Commitment to Excellence"
-              description="Guided by forward-thinking strategies, we invest in dental implant research and innovation."
-            />
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            {/* Left side - Image */}
+            <div className="relative h-[400px] md:h-[500px]">
+              <img 
+                src="/dental-closeup.jpg" 
+                alt="Dental Work Closeup" 
+                className="w-full h-full object-cover rounded-lg shadow-lg"
+              />
+            </div>
+            
+            {/* Right side - Content */}
+            <div className="space-y-6">
+              <h2 className="text-4xl md:text-5xl font-bold text-gray-900">
+                Core Dental Studio
+              </h2>
+              <p className="text-lg text-gray-600 leading-relaxed">
+                Established in 2015 as an accredited milling center, Core Dental Studio proudly boasts a highly adept 
+                team and an array of cutting-edge in-house equipment, encompassing a milling machine, advanced CAM software, 
+                a Scanner, and a 3D printer. This commitment ensures that our clients consistently encounter the epitome 
+                of excellence in both products and services.
+              </p>
+              <Link 
+                to="/about"
+                className="inline-block bg-[#3a73f2] text-white px-8 py-3 rounded-md hover:bg-blue-700 transition-colors"
+              >
+                About us
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Why Core Dental Studio Section */}
+      <section className="py-16 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-20">
+            WHY Core Dental Studio?
+          </h2>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+            {/* Leading Digital Solutions */}
+            <div className="space-y-4">
+              <h3 className="text-2xl font-bold text-[#3a73f2]">
+                Leading Digital<br />Solutions
+              </h3>
+              <p className="text-gray-600">
+                Core Dental Studio offers precision-driven digital dental 
+                solutions, leading the advancement of laboratories 
+                with innovative technology.
+              </p>
+            </div>
+
+            {/* Skilled Professionals */}
+            <div className="space-y-4">
+              <h3 className="text-2xl font-bold text-[#3a73f2]">
+                Skilled<br />Professionals,<br />
+                Superior Products
+              </h3>
+              <p className="text-gray-600">
+                Established in 2015, our adept team crafts superior 
+                products meticulously, ensuring client satisfaction 
+                and loyalty.
+              </p>
+            </div>
+
+            {/* Comprehensive Services */}
+            <div className="space-y-4">
+              <h3 className="text-2xl font-bold text-[#3a73f2]">
+                Comprehensive<br />Services
+              </h3>
+              <p className="text-gray-600">
+                From Zirconia crowns to dental implants, Core Dental 
+                Studio provides a wide range of premium alternatives to 
+                meet diverse needs.
+              </p>
+            </div>
+
+            {/* Commitment to Excellence */}
+            <div className="space-y-4">
+              <h3 className="text-2xl font-bold text-[#3a73f2]">
+                Commitment to<br />Excellence
+              </h3>
+              <p className="text-gray-600">
+                Guided by forward-thinking strategies, we invest in dental 
+                implant research, ensuring top-quality products and 
+                continuous innovation
+              </p>
+            </div>
           </div>
         </div>
       </section>
 
       {/* Technology Section */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 bg-[#cddbfa]">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">Technology</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <TechnologyCard 
-              title="MODELESS AND IMPLANTS"
-              description="Specialize in fabricating custom dental implants"
-              image="/ASC-Solution.jpeg"
-            />
-            <TechnologyCard 
-              title="Custom Abutment ASC Solution"
-              description="Up to 25°adjustable Custom abutment solution"
-              image="/abutment-solution.jpg"
-            />
-            <TechnologyCard 
-              title="Custom All on X Solution"
-              description="Try our Custom Location and Custom Multi Unit Abutment"
-              image="/all-on-x.jpg"
-            />
-          </div>
-        </div>
-      </section>
-
-      {/* Testimonials Section */}
-      <section className="py-16 bg-blue-900 text-white">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12">Testimonials</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-[#3a73f2]">
+            Technology
+          </h2>
           <div className="grid md:grid-cols-3 gap-8">
-            <TestimonialCard 
-              quote="Core Dental Studio's CAD/CAM expertise is unparalleled. Their precision in utilizing advanced technology ensures that each restoration is meticulously crafted."
-              author="Emily Park"
-            />
-            <TestimonialCard 
-              quote="What sets Core Dental Studio apart is their exceptional care and responsiveness. Beyond their digital expertise, their team demonstrates kindness."
-              author="Ethan Nguyen"
-            />
-            <TestimonialCard 
-              quote="Core Dental Studio's dedication to patient satisfaction is remarkable. Beyond their impressive digital capabilities, their unwavering commitment is outstanding."
-              author="Ava Patel"
-            />
+            {/* Modeless and Implants */}
+            <div className="text-center space-y-4">
+              <div className="aspect-square">
+                <img 
+                  src="/modeless-implants.jpg" 
+                  alt="Modeless and Implants" 
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <h3 className="text-2xl font-bold text-[#3a73f2]">
+                MODELESS AND<br />IMPLANTS
+              </h3>
+              <p className="text-gray-700">
+                Specialize in fabricating custom dental implants
+              </p>
+            </div>
+
+            {/* Custom Abutment */}
+            <div className="text-center space-y-4">
+              <div className="aspect-square">
+                <img 
+                  src="/custom-abutment.jpg" 
+                  alt="Custom Abutment ASC Solution" 
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <h3 className="text-2xl font-bold text-[#3a73f2]">
+                Custom Abutment<br />ASC Solution
+              </h3>
+              <p className="text-gray-700">
+                Up to 25°adjustable Custom abutment solution
+              </p>
+            </div>
+
+            {/* Custom All on X */}
+            <div className="text-center space-y-4">
+              <div className="aspect-square">
+                <img 
+                  src="/all-on-x.jpg" 
+                  alt="Custom All on X Solution" 
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <h3 className="text-2xl font-bold text-[#3a73f2]">
+                Custom All on X<br />Solution
+              </h3>
+              <p className="text-gray-700">
+                Try our Custom Location and Custom Multi Unit Abutment
+              </p>
+            </div>
+          </div>
+
+          {/* More Information Button */}
+          <div className="text-center mt-12">
+            <Link 
+              to="/technology"
+              className="bg-[#3a73f2] text-white px-8 py-3 rounded hover:bg-blue-700 transition-colors"
+            >
+              More Information
+            </Link>
           </div>
         </div>
       </section>
 
       {/* Contact Section */}
-      <section className="py-16 bg-white">
+      <section className="hidden py-16 bg-gray-50">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">Contact Us</h2>
+          <h2 className="text-3xl font-bold text-center mb-12">Contact Us</h2>
           <div className="max-w-3xl mx-auto">
             <ContactForm />
           </div>
@@ -173,7 +278,7 @@ const ContactForm = () => (
     ></textarea>
     <button 
       type="submit" 
-      className="bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-md md:col-span-2"
+      className="bg-[#3a73f2] hover:bg-blue-700 text-white py-3 px-6 rounded-md md:col-span-2"
     >
       Submit
     </button>
