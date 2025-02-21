@@ -15,8 +15,8 @@ const Home = () => {
                 alt="Digital Dental Excellence" 
                 className="w-full h-full object-cover opacity-30 mix-blend-overlay"
               />
-            </div>
-            
+          </div>
+
             {/* Content */}
             <div className="relative h-full flex flex-col justify-center p-12 md:p-16">
               <div className="max-w-2xl space-y-8">
@@ -26,11 +26,11 @@ const Home = () => {
                 </h1>
                 <Link 
                   to="/contact" 
-                  className="inline-block bg-white text-[#3a73f2] px-12 py-3 rounded-md hover:bg-gray-100 transition-colors text-lg"
+                  className="inline-block border-2 border-white text-white px-12 py-3 rounded-md hover:bg-white hover:text-[#3B73F2] transition-colors text-lg"
                 >
                   Contact
                 </Link>
-              </div>
+            </div>
             </div>
           </div>
         </div>
@@ -52,21 +52,31 @@ const Home = () => {
             {/* Right side - Content */}
             <div className="space-y-6">
               <h2 className="text-4xl md:text-5xl font-bold text-gray-900">
-                Core Dental Studio
+                3D Ocean Smile
               </h2>
               <p className="text-lg text-gray-600 leading-relaxed">
-                Established in 2015 as an accredited milling center, Core Dental Studio proudly boasts a highly adept 
-                team and an array of cutting-edge in-house equipment, encompassing a milling machine, advanced CAM software, 
-                a Scanner, and a 3D printer. This commitment ensures that our clients consistently encounter the epitome 
-                of excellence in both products and services.
+              Founded in 2015 as a certified milling center, 3D Ocean Smile takes pride in its skilled team and state-of-the-art in-house technology. Equipped with a milling machine, advanced CAM software, a scanner, and a 3D printer, we are dedicated to delivering top-tier products and services to our clients.
               </p>
               <Link 
                 to="/about"
-                className="inline-block bg-[#3a73f2] text-white px-8 py-3 rounded-md hover:bg-blue-700 transition-colors"
+                className="inline-flex items-center border-2 border-[#3a73f2] text-[#3a73f2] px-8 py-3 rounded-md hover:bg-[#3a73f2] hover:text-white transition-colors"
               >
-                About us
+                Who we are
+                <svg 
+                  className="w-4 h-4 ml-2" 
+                  fill="none" 
+                  stroke="currentColor" 
+                  viewBox="0 0 24 24"
+                >
+                  <path 
+                    strokeLinecap="round" 
+                    strokeLinejoin="round" 
+                    strokeWidth={2} 
+                    d="M9 5l7 7-7 7"
+                  />
+                </svg>
               </Link>
-            </div>
+          </div>
           </div>
         </div>
       </section>
@@ -75,55 +85,58 @@ const Home = () => {
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-20">
-            WHY Core Dental Studio?
+            Why 3D Ocean Smile?
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
             {/* Leading Digital Solutions */}
             <div className="space-y-4">
+              {/* Digital Solutions Icon */}
+              <i className="fas fa-regular fa-microscope text-5xl text-[#3a73f2] block mb-4"></i>
               <h3 className="text-2xl font-bold text-[#3a73f2]">
-                Leading Digital<br />Solutions
+                Cutting-Edge <br></br>Digital Dental Solutions
               </h3>
               <p className="text-gray-600">
-                Core Dental Studio offers precision-driven digital dental 
-                solutions, leading the advancement of laboratories 
-                with innovative technology.
+                3D Ocean Smile delivers high-precision digital dental solutions, empowering laboratories with advanced technology and innovation.
               </p>
             </div>
 
             {/* Skilled Professionals */}
             <div className="space-y-4">
+              {/* Skilled Professionals Icon */}
+              <i className="fas fa-compass-drafting text-5xl text-[#3a73f2] block mb-4"></i>
               <h3 className="text-2xl font-bold text-[#3a73f2]">
-                Skilled<br />Professionals,<br />
-                Superior Products
+              Expert Craftsmanship, <br></br>Exceptional Quality
+          
               </h3>
               <p className="text-gray-600">
-                Established in 2015, our adept team crafts superior 
-                products meticulously, ensuring client satisfaction 
-                and loyalty.
-              </p>
+              Since 2015, our skilled team has been dedicated to precision and excellence, 
+              delivering high-quality products that ensure client satisfaction and trust.
+             </p>
             </div>
 
             {/* Comprehensive Services */}
             <div className="space-y-4">
+              {/* Comprehensive Services Icon */}
+              <i className="fas fa-tooth text-5xl text-[#3a73f2] block mb-4"></i>
               <h3 className="text-2xl font-bold text-[#3a73f2]">
-                Comprehensive<br />Services
+                Wide-Ranging<br />Dental Solutions
               </h3>
               <p className="text-gray-600">
-                From Zirconia crowns to dental implants, Core Dental 
-                Studio provides a wide range of premium alternatives to 
-                meet diverse needs.
+              From zirconia crowns to dental implants, 
+              3D Ocean Smile offers a diverse selection of high-quality solutions tailored to meet various needs.
               </p>
-            </div>
+          </div>
 
             {/* Commitment to Excellence */}
             <div className="space-y-4">
+              {/* Commitment to Excellence Icon */}
+              <i className="fas fa-award text-5xl text-[#3a73f2] block mb-4"></i>
               <h3 className="text-2xl font-bold text-[#3a73f2]">
-                Commitment to<br />Excellence
+                Dedicated to<br />Excellence
               </h3>
               <p className="text-gray-600">
-                Guided by forward-thinking strategies, we invest in dental 
-                implant research, ensuring top-quality products and 
-                continuous innovation
+              With a forward-thinking approach, 
+              we invest in dental implant research to deliver superior products and drive continuous innovation.
               </p>
             </div>
           </div>
@@ -147,10 +160,10 @@ const Home = () => {
                 />
               </div>
               <h3 className="text-2xl font-bold text-[#3a73f2]">
-                MODELESS AND<br />IMPLANTS
+                Modeless Solutions &<br /> Custom Implants
               </h3>
               <p className="text-gray-700">
-                Specialize in fabricating custom dental implants
+              Specializing in the fabrication of custom dental implants with precision and advanced technology.
               </p>
             </div>
 
@@ -167,7 +180,8 @@ const Home = () => {
                 Custom Abutment<br />ASC Solution
               </h3>
               <p className="text-gray-700">
-                Up to 25°adjustable Custom abutment solution
+              Offering up to 25° adjustable custom abutment solutions 
+              <br></br>for optimal fit and functionality.
               </p>
             </div>
 
@@ -181,10 +195,11 @@ const Home = () => {
                 />
               </div>
               <h3 className="text-2xl font-bold text-[#3a73f2]">
-                Custom All on X<br />Solution
+                Custom All-on-X<br />Solution
               </h3>
               <p className="text-gray-700">
-                Try our Custom Location and Custom Multi Unit Abutment
+              Experience precision with our Custom Location 
+              and <br></br>Custom Multi-Unit Abutment solutions.
               </p>
             </div>
           </div>
@@ -193,9 +208,22 @@ const Home = () => {
           <div className="text-center mt-12">
             <Link 
               to="/technology"
-              className="bg-[#3a73f2] text-white px-8 py-3 rounded hover:bg-blue-700 transition-colors"
+              className="inline-flex items-center border-2 border-[#3a73f2] text-[#3a73f2] px-8 py-3 rounded-md hover:bg-[#3a73f2] hover:text-white transition-colors"
             >
-              More Information
+              Learn more
+              <svg 
+                className="w-4 h-4 ml-2" 
+                fill="none" 
+                stroke="currentColor" 
+                viewBox="0 0 24 24"
+              >
+                <path 
+                  strokeLinecap="round" 
+                  strokeLinejoin="round" 
+                  strokeWidth={2} 
+                  d="M9 5l7 7-7 7"
+                />
+              </svg>
             </Link>
           </div>
         </div>
@@ -208,6 +236,25 @@ const Home = () => {
           <div className="max-w-3xl mx-auto">
             <ContactForm />
           </div>
+        </div>
+      </section>
+
+      {/* File Upload Section */}
+      <section id="file-upload-section" className="py-16 bg-gray-50">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-3xl font-bold mb-6">File Submission</h2>
+          <p className="text-gray-600 mb-8">
+          
+            Simply click the button below to access the submission form and provide the required details. <br></br>Our team will review your request and get back to you promptly.
+          </p>
+          <a 
+            href="https://forms.gle/ntzpFP33TfKBMLKg7" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="inline-block bg-[#3a73f2] text-white px-8 py-3 rounded-md hover:bg-blue-700 transition-colors"
+          >
+            Click to submit
+          </a>
         </div>
       </section>
     </div>

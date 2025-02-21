@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const About = () => {
   return (
@@ -6,30 +7,23 @@ const About = () => {
       {/* Hero Section */}
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
-          <h1 className="text-4xl md:text-5xl font-bold text-center mb-12">Core Dental Studio</h1>
+          <h1 className="text-4xl md:text-5xl font-bold text-center mb-12">3D Ocean Smile</h1>
           <div className="max-w-4xl mx-auto text-lg text-gray-700 space-y-6">
             <p>
-              Core Dental Studio, situated in Southern California, delivers precision-driven digital dental solutions, 
-              playing a pivotal role in the advancement of numerous laboratories. Our superior products, meticulously 
-              crafted by our seasoned professionals, culminate in content and appreciative returning clients.
+            3D Ocean Smile, based in Southern California, specializes in precision-driven digital dental solutions, helping laboratories stay at the forefront of 
+            innovation. Our expertly crafted products, developed by a skilled team, foster lasting client satisfaction and loyalty.
             </p>
             <p>
-              Established in 2015 as an accredited milling center, Core Dental Studio proudly boasts a highly adept 
-              team and an array of cutting-edge in-house equipment, encompassing a milling machine, advanced CAM software, 
-              a Scanner, and a 3D printer. This commitment ensures that our clients consistently encounter the epitome 
-              of excellence in both products and services.
+            Founded in 2015 as an accredited milling center, 3D Ocean Smile takes pride in its highly experienced team and cutting-edge in-house technology, 
+            including a milling machine, advanced CAM software, a scanner, and a 3D printer. This dedication ensures that every product meets the highest standards of quality and excellence.
             </p>
             <p>
-              Guided by forward-thinking strategies, we make substantial investments in dental implant research and 
-              development. Our continuous refinement of existing processes is a testament to our unwavering commitment 
-              to ensuring that all products we produce stand at the pinnacle of the highest quality.
+            With a forward-thinking approach, we invest heavily in dental implant research and development, continuously refining our processes to deliver industry-leading solutions. Our unwavering 
+            commitment to innovation guarantees that every product we create meets the highest standards of precision and reliability.
             </p>
             <p>
-              Core Dental Studio epitomizes the forefront of utilizing the latest and most advanced digital technology 
-              for a comprehensive suite of services, including Zirconia crowns, copings, custom abutments, temporary 
-              crowns, and dental implants. We have broadened our spectrum to incorporate additional choices such as 
-              titanium implant bars and bridges, hybrid dentures, and All-on-X solutions, offering a diverse array 
-              of premium alternatives.
+            Leveraging the latest advancements in digital technology, 3D Ocean Smile offers a comprehensive range of services, including Zirconia crowns, copings, custom abutments, temporary crowns, and dental implants. Expanding our offerings, we also provide titanium 
+            implant bars and bridges, hybrid dentures, and All-on-X solutions, delivering a diverse selection of premium dental solutions.
             </p>
           </div>
         </div>
@@ -44,18 +38,18 @@ const About = () => {
               image="/sddefault.jpg"
               title="Digital Design Services"
               services={[
-                'Custom treatment planning',
-                '3D modeling and digital design optimization',
+                'Tailored treatment planning',
+                '3D modeling and digital design enhancement',
                 'Custom implant and abutment design',
-                'All-on-X custom design'
+                'All-on-X custom design solutions'
               ]}
             />
             <ServiceCard
               image="/CA-milling2.jpg"
               title="Milling & Printing"
               services={[
-                'High-precision milling services (Zirconia, metal, composites, etc.)',
-                '3D printing (night guard, surgical guides, other custom products)',
+                'High-precision milling for Zirconia, metal, composites, and more',
+                '3D printing for night guards, surgical guides, and other custom products',
                 'Post-milling finishing and polishing'
               ]}
             />
@@ -64,17 +58,17 @@ const About = () => {
               title="Implants & Restorations"
               services={[
                 'Custom implant abutments',
-                'Zirconia crowns, copings, temporary crowns',
-                'Implant restoration solutions'
+                'Zirconia crowns, copings, and temporary crowns',
+                'Comprehensive implant restoration solutions'
               ]}
             />
             <ServiceCard
               image="/AdobeStock_873526832gold.jpg"
               title="All-on-X Solutions"
               services={[
-                'Overview and benefits of All-on-X',
+                'Overview and advantages of All-on-X',
                 'Custom All-on-X design and implant placement',
-                'Full process support'
+                'Full process support from start to finish'
               ]}
             />
           </div>
@@ -85,12 +79,28 @@ const About = () => {
       <section className="py-16 bg-[#cddbfa] text-[#3a73f2]">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-6">
-            Meet Core Dental Studio's<br />
+            Meet 3D Ocean Smile's<br />
             CAD/CAM specialists today
           </h2>
-          <button className="bg-[#3a73f2] text-white  px-8 py-3 rounded-md hover:bg-blue-700 transition-colors">
+          <Link 
+            to="/contact"
+            className="inline-flex items-center border-2 border-[#3a73f2] text-[#3a73f2] px-8 py-3 rounded-md hover:bg-[#3a73f2] hover:text-white transition-colors"
+          >
             Contact Us
-          </button>
+            <svg 
+              className="w-4 h-4 ml-2" 
+              fill="none" 
+              stroke="currentColor" 
+              viewBox="0 0 24 24"
+            >
+              <path 
+                strokeLinecap="round" 
+                strokeLinejoin="round" 
+                strokeWidth={2} 
+                d="M9 5l7 7-7 7"
+              />
+            </svg>
+          </Link>
         </div>
       </section>
     </div>

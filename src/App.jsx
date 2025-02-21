@@ -7,8 +7,7 @@ import About from './pages/About'
 import Technology from './pages/Technology'
 import Product from './pages/Product'
 import Contact from './pages/Contact'
-import Upload from './pages/Upload'
-import UploadAdmin from './pages/admin/UploadAdmin'
+import Terms from './pages/Terms'
 
 function App() {
   return (
@@ -21,8 +20,7 @@ function App() {
           <Route path="/technology" element={<Technology />} />
           <Route path="/product" element={<Product />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/upload" element={<Upload />} />
-          <Route path="/admin/uploads" element={<UploadAdmin />} />
+          <Route path="/terms" element={<Terms />} />
           {/* Add other routes as needed */}
         </Routes>
       </main>

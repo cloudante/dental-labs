@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Product = () => {
   return (
@@ -9,7 +10,7 @@ const Product = () => {
           <h1 className="text-4xl md:text-5xl font-bold text-center mb-12">Product</h1>
           <div className="max-w-4xl mx-auto text-lg text-gray-700 text-center">
             <p>
-              Explore Core Dental Studio's diverse range of dental restorations.
+              Explore 3D Ocean Smile's diverse range of dental restorations.
             </p>
           </div>
         </div>
@@ -68,12 +69,28 @@ const Product = () => {
       <section className="py-16 bg-[#cddbfa] text-[#3a73f2]">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-6">
-            Meet Core Dental Studio's<br />
+            Meet 3D Ocean Smile's<br />
             CAD/CAM specialists today
           </h2>
-          <button className="bg-[#3a73f2] text-white px-8 py-3 rounded-md hover:bg-blue-700 transition-colors">
+          <Link 
+            to="/contact"
+            className="inline-flex items-center border-2 border-[#3a73f2] text-[#3a73f2] px-8 py-3 rounded-md hover:bg-[#3a73f2] hover:text-white transition-colors"
+          >
             Contact Us
-          </button>
+            <svg 
+              className="w-4 h-4 ml-2" 
+              fill="none" 
+              stroke="currentColor" 
+              viewBox="0 0 24 24"
+            >
+              <path 
+                strokeLinecap="round" 
+                strokeLinejoin="round" 
+                strokeWidth={2} 
+                d="M9 5l7 7-7 7"
+              />
+            </svg>
+          </Link>
         </div>
       </section>
     </div>

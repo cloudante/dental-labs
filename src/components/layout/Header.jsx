@@ -1,16 +1,23 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import logo from '../../assets/3doceansmile.svg';  // Fix: Use ../../ to go up two levels
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const scrollToFileUpload = () => {
+    const element = document.getElementById('file-upload-section');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
   const menuItems = [
     { label: 'Home', path: '/' },
     { label: 'About', path: '/about' },
     { label: 'Technology', path: '/technology' },
     { label: 'Product', path: '/product' },
-    { label: 'Upload', path: '/upload' },
-    { label: 'Contact', path: '/contact' },
+  
   ];
 
   return (
@@ -18,8 +25,12 @@ const Header = () => {
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
-          <Link to="/" className="flex items-center">
-            <img src="/Core-logo.png" alt="Core Dental Studio" className="h-12" />
+          <Link to="/" className="flex items-start">
+            <img 
+              src={logo} 
+              alt="3D Ocean Smile" 
+              className="h-40 w-auto"
+            />
           </Link>
 
           {/* Desktop Menu */}
@@ -35,14 +46,14 @@ const Header = () => {
             ))}
           </nav>
 
-          {/* Phone Number */}
+          {/* File Submissions Button */}
           <div className="hidden md:flex items-center">
-            <a 
-              href="tel:657-239-0077" 
-              className="text-blue-600 font-semibold hover:text-blue-800"
+            <button 
+              onClick={scrollToFileUpload}
+              className="inline-flex items-center border-2 border-[#3a73f2] text-[#3a73f2] px-6 py-2 rounded-md hover:bg-[#3a73f2] hover:text-white transition-colors"
             >
-              657-239-0077
-            </a>
+              File Submissions
+            </button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -82,12 +93,15 @@ const Header = () => {
                   {item.label}
                 </Link>
               ))}
-              <a 
-                href="tel:657-239-0077" 
-                className="text-blue-600 font-semibold hover:text-blue-800"
+              <button 
+                onClick={() => {
+                  scrollToFileUpload();
+                  setIsMenuOpen(false);
+                }}
+                className="text-[#3a73f2] hover:text-blue-800 text-left"
               >
-                657-239-0077
-              </a>
+                File Submissions
+              </button>
             </div>
           </div>
         )}
