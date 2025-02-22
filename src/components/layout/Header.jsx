@@ -5,19 +5,11 @@ import logo from '../../assets/3doceansmile_v2.svg';  // Fix: Use ../../ to go u
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const scrollToFileUpload = () => {
-    const element = document.getElementById('file-upload-section');
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
   const menuItems = [
     { label: 'Home', path: '/' },
     { label: 'About', path: '/about' },
     { label: 'Technology', path: '/technology' },
     { label: 'Product', path: '/product' },
-  
   ];
 
   return (
@@ -48,12 +40,14 @@ const Header = () => {
 
           {/* File Submissions Button */}
           <div className="hidden md:flex items-center">
-            <button 
-              onClick={scrollToFileUpload}
+            <a 
+              href="https://forms.gle/ntzpFP33TfKBMLKg7"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center border-2 border-[#3a73f2] text-[#3a73f2] px-6 py-2 rounded-md hover:bg-[#3a73f2] hover:text-white transition-colors"
             >
               File Submissions
-            </button>
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -93,15 +87,15 @@ const Header = () => {
                   {item.label}
                 </Link>
               ))}
-              <button 
-                onClick={() => {
-                  scrollToFileUpload();
-                  setIsMenuOpen(false);
-                }}
+              <a 
+                href="https://forms.gle/ntzpFP33TfKBMLKg7"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-[#3a73f2] hover:text-blue-800 text-left"
+                onClick={() => setIsMenuOpen(false)}
               >
                 File Submissions
-              </button>
+              </a>
             </div>
           </div>
         )}
