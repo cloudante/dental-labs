@@ -11,95 +11,92 @@ const Product = () => {
   return (
     <PageTransition>
       <div>
-        {/* Hero Section */}
-        <section className="py-16 bg-gray-50">
-          <div className="container mx-auto px-4">
-            <h1 className="text-3xl md:text-5xl font-bold text-center mb-12">Product</h1>
-            <div className="max-w-4xl mx-auto text-base md:text-lg text-gray-700 text-center">
-              <p>
-                Explore 3D Ocean Smile's diverse range of dental restorations.
-              </p>
-            </div>
-          </div>
-        </section>
 
         {/* Products Grid Section */}
         <section className="py-16 bg-white">
           <div className="container mx-auto px-4">
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {/* Zirconia Crown */}
-              <ProductCard
-                image="/zirconia-crown.jpg"
-                title="Zirconia Crown"
-                description="High-strength, natural-looking dental crowns crafted with precision for optimal aesthetics and durability."
-              />
+            {/* Grid Container */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+              {/* Large Item */}
+              <div className="lg:col-span-2 lg:row-span-2">
+                <ProductCard
+                  image="/zirconia-crown.jpg"
+                  title="Zirconia Crown"
+                  description="Durable, high-strength crowns crafted for natural aesthetics and long-lasting performance."
+                />
+              </div>
 
-              {/* Custom Abutment */}
-              <ProductCard
-                image="/custom-abutment-product.jpg"
-                title="Custom Abutment"
-                description="Precision-engineered custom abutments designed for perfect fit and optimal function."
-              />
+              {/* Regular Items */}
+              <div>
+                <ProductCard
+                  image="/custom-abutment-product.jpg"
+                  title="Custom Abutment"
+                  description="Precision-engineered abutments tailored for a perfect fit and optimal functionality."
+                />
+              </div>
 
-              {/* All-on-X */}
-              <ProductCard
-                image="/all-on-x-product.jpg"
-                title="All-on-X"
-                description="Complete arch restoration solutions with superior stability and natural aesthetics."
-              />
+              <div>
+                <ProductCard
+                  image="/all-on-x-product.jpg"
+                  title="All-on-X"
+                  description="Full-arch restoration solutions offering superior stability and a natural look."
+                />
+              </div>
 
-              {/* Implant Bar */}
-              <ProductCard
-                image="/implant-bar.jpg"
-                title="Implant Bar"
-                description="Custom-designed implant bars for secure and comfortable full-arch restorations."
-              />
+              {/* Bottom Row - 3 Equal Columns */}
+              <div>
+                <ProductCard
+                  image="/hybrid-denture.jpg"
+                  title="Hybrid Denture"
+                  description="Innovative hybrid prosthetics combining the benefits of fixed and removable solutions."
+                />
+              </div>
 
-              {/* Hybrid Denture */}
-              <ProductCard
-                image="/hybrid-denture.jpg"
-                title="Hybrid Denture"
-                description="Advanced hybrid solutions combining the benefits of fixed and removable prosthetics."
-              />
+              <div>
+                <ProductCard
+                  image="/implant-bar.jpg"
+                  title="Implant Bar"
+                  description="Custom-designed implant bars ensuring secure and comfortable full-arch restorations."
+                />
+              </div>
 
-              {/* Full Denture */}
-              <ProductCard
-                image="/full-denture.jpg"
-                title="Full Denture"
-                description="Premium quality full dentures designed for comfort, functionality, and natural appearance."
-              />
+              <div>
+                <ProductCard
+                  image="/full-denture.jpg"
+                  title="Full Denture"
+                  description="High-quality full dentures designed for exceptional comfort, function, and aesthetics."
+                />
+              </div>
             </div>
           </div>
         </section>
 
         {/* CTA Section */}
-        <section className="py-16 bg-[#cddbfa] text-[#3a73f2]">
-          <div className="container mx-auto px-4 text-center">
-            <h2 className="text-3xl font-bold mb-6">
-              Meet 3D Ocean Smile's<br />
-              CAD/CAM specialists today
-            </h2>
-            <a 
-              href="https://mail.google.com/mail/?view=cm&fs=1&to=crowns@3doceansmile.com&su=Inquiry from Website&body=Hello 3D Ocean Smile team,"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center border-2 border-[#3a73f2] text-[#3a73f2] px-8 py-3 rounded-md hover:bg-[#3a73f2] hover:text-white transition-colors"
-            >
-              Contact Us
-              <svg 
-                className="w-4 h-4 ml-2" 
-                fill="none" 
-                stroke="currentColor" 
-                viewBox="0 0 24 24"
-              >
-                <path 
-                  strokeLinecap="round" 
-                  strokeLinejoin="round" 
-                  strokeWidth={2} 
-                  d="M9 5l7 7-7 7"
-                />
-              </svg>
-            </a>
+        <section className="bg-[#6188D1] rounded-3xl mx-4 md:mx-8 overflow-hidden">
+          <div className="container mx-auto px-12 py-20">
+            <div className="flex flex-col md:flex-row justify-between items-center">
+              <div className="space-y-4 mb-8 md:mb-0">
+                <span className="text-[#c8d0ff] text-sm font-semibold uppercase tracking-wider">
+                  TRY IT NOW
+                </span>
+                <h2 className="text-4xl md:text-5xl font-bold text-white">
+                  Ready to submit your<br />
+                  orders and statements?
+                </h2>
+                
+              </div>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <a 
+                  href="https://forms.gle/ntzpFP33TfKBMLKg7"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="border border-white text-white px-8 py-4 rounded-xl hover:bg-white hover:text-[#6188D1] transition-colors inline-flex items-center"
+                >
+                  Get Started Now
+                </a>
+               
+              </div>
+            </div>
           </div>
         </section>
       </div>

@@ -11,9 +11,9 @@ import Terms from './pages/Terms'
 
 function App() {
   return (
-    <div className="app flex flex-col min-h-screen">
+    <>
       <Header />
-      <main className="flex-grow">
+      <main>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
@@ -25,7 +25,7 @@ function App() {
         </Routes>
       </main>
       <Footer />
-    </div>
+    </>
   )
 }
 

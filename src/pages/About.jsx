@@ -11,157 +11,184 @@ const About = () => {
 
   return (
     <PageTransition>
-      <div className="min-h-screen">
-        {/* Hero Section */}
-        <section className="py-16 bg-gray-50">
+      <div>
+        {/* Main Content Section */}
+        <section className="py-16 bg-white">
           <div className="container mx-auto px-4">
-            <h1 className="text-3xl md:text-5xl font-bold text-center mb-12">3D Ocean Smile</h1>
-            <div className="max-w-4xl mx-auto text-base md:text-lg text-gray-700 space-y-6">
+            <h1 className="text-3xl md:text-5xl font-bold text-center mb-12">About Us</h1>
+            <div className="max-w-4xl mx-auto text-base md:text-lg text-gray-700 space-y-6 mb-16">
               <p>
-              3D Ocean Smile, based in Southern California, specializes in precision-driven digital dental solutions, helping laboratories stay at the forefront of 
-              innovation. Our expertly crafted products, developed by a skilled team, foster lasting client satisfaction and loyalty.
+                3D Ocean Smile, based in Southern California, specializes in precision-driven digital dental solutions, helping laboratories stay at the forefront of innovation.
               </p>
               <p>
-              Founded in 2015 as an accredited milling center, 3D Ocean Smile takes pride in its highly experienced team and cutting-edge in-house technology, 
-              including a milling machine, advanced CAM software, a scanner, and a 3D printer. This dedication ensures that every product meets the highest standards of quality and excellence.
-              </p>
-              <p>
-              With a forward-thinking approach, we invest heavily in dental implant research and development, continuously refining our processes to deliver industry-leading solutions. Our unwavering 
-              commitment to innovation guarantees that every product we create meets the highest standards of precision and reliability.
-              </p>
-              <p>
-              Leveraging the latest advancements in digital technology, 3D Ocean Smile offers a comprehensive range of services, including Zirconia crowns, copings, custom abutments, temporary crowns, and dental implants. Expanding our offerings, we also provide titanium 
-              implant bars and bridges, hybrid dentures, and All-on-X solutions, delivering a diverse selection of premium dental solutions.
+                Founded in 2015 as an accredited milling center, we take pride in our highly experienced team and cutting-edge in-house technology.
               </p>
             </div>
+
+    
           </div>
         </section>
 
-        {/* Services Section */}
-        <section className="py-16 bg-white">
-          <div className="container mx-auto px-4">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">Our Services</h2>
-            
-            {/* Mobile Slider */}
-            <div className="md:hidden w-full overflow-x-auto snap-x snap-mandatory flex gap-4 pb-6 scrollbar-hide">
-              <div className="snap-center shrink-0 w-[80%] first:ml-[10%]">
-                <ServiceCard
-                  image="/sddefault.jpg"
-                  title="Digital Design Services"
-                  services={[
-                    'Tailored treatment planning',
-                    '3D modeling and digital design enhancement',
-                    'Custom implant and abutment design',
-                    'All-on-X custom design solutions'
-                  ]}
-                />
-              </div>
-              <div className="snap-center shrink-0 w-[80%]">
-                <ServiceCard
-                  image="/CA-milling2.jpg"
-                  title="Milling & Printing"
-                  services={[
-                    'High-precision milling for Zirconia, metal, composites, and more',
-                    '3D printing for night guards, surgical guides, and other custom products',
-                    'Post-milling finishing and polishing'
-                  ]}
-                />
-              </div>
-              <div className="snap-center shrink-0 w-[80%]">
-                <ServiceCard
-                  image="/AdobeStock_352796278_Preview.jpeg"
-                  title="Implants & Restorations"
-                  services={[
-                    'Custom implant abutments',
-                    'Zirconia crowns, copings, and temporary crowns',
-                    'Comprehensive implant restoration solutions'
-                  ]}
-                />
-              </div>
-              <div className="snap-center shrink-0 w-[80%] last:mr-[10%]">
-                <ServiceCard
-                  image="/AdobeStock_873526832gold.jpg"
-                  title="All-on-X Solutions"
-                  services={[
-                    'Overview and advantages of All-on-X',
-                    'Custom All-on-X design and implant placement',
-                    'Full process support from start to finish'
-                  ]}
-                />
-              </div>
-            </div>
+        <section className="relative">
+          {/* Top Background */}
+          <div className="h-20 bg-[#FffffF]"></div>
+          
+          {/* Main Content with Overlap */}
+          <div className="relative -mt-20">
+            <div className="container mx-auto px-4">
+              {/* White Content Box */}
+              <div className="bg-white rounded-3xl shadow-lg p-12 mb-16">
+                <div className="max-w-3xl mb-12">
+                  <h2 className="text-4xl md:text-4xl font-bold text-[#0A2540] mb-6">
+                    Our Services
+                  </h2>
+                </div>
+                
+                <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                  {/* Value Cards */}
+                  <div className="text-left">
+                    <div className="mb-6">
+                      <div className="w-12 h-12 flex items-center justify-center bg-[#EBF1FF] rounded-xl">
+                        <i className="fas fa-laptop text-2xl text-[#517CCD]"></i>
+                      </div>
+                      <h3 className="text-xl font-bold text-[#0A2540] mt-4">
+                        Digital Design Services
+                      </h3>
+                    </div>
+                    <ul className="text-left text-gray-600 space-y-2">
+                      <li className="flex items-start">
+                        <span className="text-[#517CCD] mr-2">•</span>
+                        Tailored treatment planning
+                      </li>
+                      <li className="flex items-start">
+                        <span className="text-[#517CCD] mr-2">•</span>
+                        3D modeling and digital design enhancement
+                      </li>
+                      <li className="flex items-start">
+                        <span className="text-[#517CCD] mr-2">•</span>
+                        Custom implant and abutment design
+                      </li>
+                      <li className="flex items-start">
+                        <span className="text-[#517CCD] mr-2">•</span>
+                        All-on-X custom design solutions
+                      </li>
+                    </ul>
+                  </div>
 
-            {/* Desktop Grid */}
-            <div className="hidden md:grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-              <ServiceCard
-                image="/sddefault.jpg"
-                title="Digital Design Services"
-                services={[
-                  'Tailored treatment planning',
-                  '3D modeling and digital design enhancement',
-                  'Custom implant and abutment design',
-                  'All-on-X custom design solutions'
-                ]}
-              />
-              <ServiceCard
-                image="/CA-milling2.jpg"
-                title="Milling & Printing"
-                services={[
-                  'High-precision milling for Zirconia, metal, composites, and more',
-                  '3D printing for night guards, surgical guides, and other custom products',
-                  'Post-milling finishing and polishing'
-                ]}
-              />
-              <ServiceCard
-                image="/AdobeStock_352796278_Preview.jpeg"
-                title="Implants & Restorations"
-                services={[
-                  'Custom implant abutments',
-                  'Zirconia crowns, copings, and temporary crowns',
-                  'Comprehensive implant restoration solutions'
-                ]}
-              />
-              <ServiceCard
-                image="/AdobeStock_873526832gold.jpg"
-                title="All-on-X Solutions"
-                services={[
-                  'Overview and advantages of All-on-X',
-                  'Custom All-on-X design and implant placement',
-                  'Full process support from start to finish'
-                ]}
-              />
+                  <div className="text-left">
+                    <div className="mb-6">
+                      <div className="w-12 h-12 flex items-center justify-center bg-[#EBF1FF] rounded-xl">
+                        <i className="fas fa-print text-2xl text-[#517CCD]"></i>
+                      </div>
+                      <h3 className="text-xl font-bold text-[#0A2540] mt-4">
+                        Milling & Printing
+                      </h3>
+                    </div>
+                    <ul className="text-left text-gray-600 space-y-2">
+                      <li className="flex items-start">
+                        <span className="text-[#517CCD] mr-2">•</span>
+                        High-precision milling for Zirconia, metal, composites, and more
+                      </li>
+                      <li className="flex items-start">
+                        <span className="text-[#517CCD] mr-2">•</span>
+                        3D printing for night guards, surgical guides, and other custom products
+                      </li>
+                      <li className="flex items-start">
+                        <span className="text-[#517CCD] mr-2">•</span>
+                        Post-milling finishing and polishing
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div className="text-left">
+                    <div className="mb-6">
+                      <div className="w-12 h-12 flex items-center justify-center bg-[#EBF1FF] rounded-xl">
+                        <i className="fas fa-tooth text-2xl text-[#517CCD]"></i>
+                      </div>
+                      <h3 className="text-xl font-bold text-[#0A2540] mt-4">
+                        Implants & Restorations
+                      </h3>
+                    </div>
+                    <ul className="text-left text-gray-600 space-y-2">
+                      <li className="flex items-start">
+                        <span className="text-[#517CCD] mr-2">•</span>
+                        Custom implant abutments
+                      </li>
+                      <li className="flex items-start">
+                        <span className="text-[#517CCD] mr-2">•</span>
+                        Zirconia crowns, copings, and temporary crowns
+                      </li>
+                      <li className="flex items-start">
+                        <span className="text-[#517CCD] mr-2">•</span>
+                        Comprehensive implant restoration solutions
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div className="text-left">
+                    <div className="mb-6">
+                      <div className="w-12 h-12 flex items-center justify-center bg-[#EBF1FF] rounded-xl">
+                        <i className="fas fa-gears text-2xl text-[#517CCD]"></i>
+                      </div>
+                      <h3 className="text-xl font-bold text-[#0A2540] mt-4">
+                        All-on-X Solutions
+                      </h3>
+                    </div>
+                    <ul className="text-left text-gray-600 space-y-2">
+                      <li className="flex items-start">
+                        <span className="text-[#517CCD] mr-2">•</span>
+                        Overview and advantages of All-on-X
+                      </li>
+                      <li className="flex items-start">
+                        <span className="text-[#517CCD] mr-2">•</span>
+                        Custom All-on-X design and implant placement
+                      </li>
+                      <li className="flex items-start">
+                        <span className="text-[#517CCD] mr-2">•</span>
+                        Full process support from start to finish
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </section>
 
         {/* CTA Section */}
-        <section className="py-16 bg-[#cddbfa] text-[#3a73f2]">
-          <div className="container mx-auto px-4 text-center">
-            <h2 className="text-3xl font-bold mb-6">
-              Meet 3D Ocean Smile's<br />
-              CAD/CAM specialists today
-            </h2>
-            <a 
-              href="https://mail.google.com/mail/?view=cm&fs=1&to=crowns@3doceansmile.com&su=Inquiry from Website&body=Hello 3D Ocean Smile team,"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center border-2 border-[#3a73f2] text-[#3a73f2] px-8 py-3 rounded-md hover:bg-[#3a73f2] hover:text-white transition-colors"
-            >
-              Contact Us
-              <svg 
-                className="w-4 h-4 ml-2" 
-                fill="none" 
-                stroke="currentColor" 
-                viewBox="0 0 24 24"
-              >
-                <path 
-                  strokeLinecap="round" 
-                  strokeLinejoin="round" 
-                  strokeWidth={2} 
-                  d="M9 5l7 7-7 7"
-                />
-              </svg>
-            </a>
+        <section className="bg-[#6188D1] rounded-3xl mx-4 md:mx-8 mb-16 overflow-hidden">
+          <div className="container mx-auto px-12 py-20">
+            <div className="flex flex-col md:flex-row justify-between items-center">
+              <div className="space-y-4 mb-8 md:mb-0">
+                <h2 className="text-4xl md:text-5xl font-bold text-white">
+                  Meet 3D Ocean Smile's<br />
+                  CAD/CAM specialists today
+                </h2>
+              </div>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <a 
+                  href="https://mail.google.com/mail/?view=cm&fs=1&to=crowns@3doceansmile.com&su=Inquiry from Website&body=Hello 3D Ocean Smile team,"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="border border-white text-white px-8 py-4 rounded-xl hover:bg-white hover:text-[#6188D1] transition-colors inline-flex items-center"
+                >
+                  Contact Us
+                  <svg 
+                    className="w-4 h-4 ml-2" 
+                    fill="none" 
+                    stroke="currentColor" 
+                    viewBox="0 0 24 24"
+                  >
+                    <path 
+                      strokeLinecap="round" 
+                      strokeLinejoin="round" 
+                      strokeWidth={2} 
+                      d="M9 5l7 7-7 7"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
           </div>
         </section>
       </div>
@@ -169,33 +196,24 @@ const About = () => {
   );
 };
 
-const ServiceCard = ({ image, title, services }) => (
-  <div className="bg-gray-50 rounded-lg overflow-hidden h-full">
-    <img src={image} alt={title} className="w-full h-48 object-cover" />
-    <div className="p-6">
-      <div className="mb-6">
-        {title === "Digital Design Services" && (
-          <i className="fas fa-laptop-code text-4xl text-[#3a73f2]"></i>
-        )}
-        {title === "Milling & Printing" && (
-          <i className="fas fa-print text-4xl text-[#3a73f2]"></i>
-        )}
-        {title === "Implants & Restorations" && (
-          <i className="fas fa-tooth text-4xl text-[#3a73f2]"></i>
-        )}
-        {title === "All-on-X Solutions" && (
-          <i className="fas fa-cogs text-4xl text-[#3a73f2]"></i>
-        )}
+const ServiceCard = ({ icon, title, list }) => (
+  <div className="text-left">
+    <div className="mb-6">
+      <div className="w-12 h-12 flex items-center justify-center bg-[#EBF1FF] rounded-xl">
+        <i className={`fas fa-${icon} text-2xl text-[#517CCD]`}></i>
       </div>
-      <h3 className="text-lg md:text-xl font-bold mb-4">{title}</h3>
-      <ul className="space-y-2">
-        {services.map((service, index) => (
-          <li key={index} className="text-sm md:text-base text-gray-600">
-            • {service}
-          </li>
-        ))}
-      </ul>
+      <h3 className="text-xl font-bold text-[#0A2540] mt-4">
+        {title}
+      </h3>
     </div>
+    <ul className="text-left text-gray-600 space-y-2">
+      {list.map((item, index) => (
+        <li key={index} className="flex items-start">
+          <span className="text-[#517CCD] mr-2">•</span>
+          {item}
+        </li>
+      ))}
+    </ul>
   </div>
 );
 

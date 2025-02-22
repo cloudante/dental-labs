@@ -14,11 +14,13 @@ const Technology = () => {
   return (
     <PageTransition>
       <div>
-        {/* Hero Section */}
-        <section className="py-16 bg-gray-50">
+        
+
+        {/* Technology Services Section */}
+        <section className="py-16 bg-white">
           <div className="container mx-auto px-4">
             <h1 className="text-3xl md:text-5xl font-bold text-center mb-12">Technology</h1>
-            <div className="max-w-4xl mx-auto text-base md:text-lg text-gray-700 space-y-6">
+            <div className="max-w-4xl mx-auto text-base md:text-lg text-gray-700 space-y-6 mb-20">
               <p>
               3D Ocean Smile harnesses advanced digital technology to deliver precision-driven dental solutions. With state-of-the-art equipment and innovative processes, we guarantee top-quality results for each client.
               </p>
@@ -26,13 +28,6 @@ const Technology = () => {
               From cutting-edge CAD/CAM systems to the latest 3D printing technology, we are committed to ongoing investments in top-tier tools and training, ensuring we remain leaders in digital dentistry.
               </p>
             </div>
-          </div>
-        </section>
-
-        {/* Technology Services Section */}
-        <section className="py-16 bg-white">
-          <div className="container mx-auto px-4">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">Our Solutions</h2>
             
             {/* Mobile Slider */}
             <div className="md:hidden w-full overflow-x-auto snap-x snap-mandatory flex gap-4 pb-6 scrollbar-hide">
@@ -93,33 +88,39 @@ const Technology = () => {
         </section>
 
         {/* CTA Section */}
-        <section className="py-16 bg-[#cddbfa] text-[#3a73f2]">
-          <div className="container mx-auto px-4 text-center">
-            <h2 className="text-3xl font-bold mb-6">
-              Meet 3D Ocean Smile's<br />
-              CAD/CAM specialists today
-            </h2>
-            <a 
-              href="https://mail.google.com/mail/?view=cm&fs=1&to=crowns@3doceansmile.com&su=Inquiry from Website&body=Hello 3D Ocean Smile team,"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center border-2 border-[#3a73f2] text-[#3a73f2] px-8 py-3 rounded-md hover:bg-[#3a73f2] hover:text-white transition-colors"
-            >
-              Contact Us
-              <svg 
-                className="w-4 h-4 ml-2" 
-                fill="none" 
-                stroke="currentColor" 
-                viewBox="0 0 24 24"
-              >
-                <path 
-                  strokeLinecap="round" 
-                  strokeLinejoin="round" 
-                  strokeWidth={2} 
-                  d="M9 5l7 7-7 7"
-                />
-              </svg>
-            </a>
+        <section className="bg-[#6188D1] rounded-3xl mx-4 md:mx-8 overflow-hidden">
+          <div className="container mx-auto px-12 py-20">
+            <div className="flex flex-col md:flex-row justify-between items-center">
+              <div className="space-y-4 mb-8 md:mb-0">
+                <h2 className="text-4xl md:text-5xl font-bold text-white">
+                  Meet 3D Ocean Smile's<br />
+                  CAD/CAM specialists today
+                </h2>
+              </div>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <a 
+                  href="https://mail.google.com/mail/?view=cm&fs=1&to=crowns@3doceansmile.com&su=Inquiry from Website&body=Hello 3D Ocean Smile team,"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="border border-white text-white px-8 py-4 rounded-xl hover:bg-white hover:text-[#6188D1] transition-colors inline-flex items-center"
+                >
+                  Contact Us
+                  <svg 
+                    className="w-4 h-4 ml-2" 
+                    fill="none" 
+                    stroke="currentColor" 
+                    viewBox="0 0 24 24"
+                  >
+                    <path 
+                      strokeLinecap="round" 
+                      strokeLinejoin="round" 
+                      strokeWidth={2} 
+                      d="M9 5l7 7-7 7"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
           </div>
         </section>
       </div>

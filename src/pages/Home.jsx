@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { setPageTitle } from '../utils/setPageTitle';
 import PageTransition from '../components/layout/PageTransition';
+import logo from '../assets/3doceansmile_v2.svg';
 
 const Home = () => {
   useEffect(() => {
@@ -12,35 +13,117 @@ const Home = () => {
     <PageTransition>
       <div className="min-h-screen">
         {/* Hero Section */}
-        <section className="py-16">
-          <div className="container mx-auto px-4">
-            <div className="relative bg-[#3a73f2] rounded-lg overflow-hidden aspect-[16/9]">
-              {/* Background Image */}
-              <div className="absolute inset-0">
-                <img 
-                  src="/hero-dental.jpg" 
-                  alt="Digital Dental Excellence" 
-                  className="w-full h-full object-cover opacity-30 mix-blend-overlay"
-                />
+        <section className="py-24 bg-[#F2F7FF] relative overflow-hidden">
+          {/* Background Pattern */}
+          <div className="absolute inset-0 bg-[url('/pattern-bg.svg')] opacity-5"></div>
+          
+          <div className="container mx-auto px-4 relative">
+            <div className="grid md:grid-cols-2 gap-16 items-center">
+              {/* Left Content */}
+              <div className="space-y-8">
+                <h1 className="text-5xl md:text-7xl font-bold text-[#0A2540] leading-tight">
+                  Digital Dental<br />
+                  Excellence
+                </h1>
+                <p className="text-lg text-gray-600 max-w-lg">
+                  Empowering dental laboratories with precision-driven digital solutions, advanced technology, and innovative processes.
+                </p>
+                <div className="space-y-6">
+                  <Link 
+                    to="/product" 
+                    className="inline-block bg-[#4070C9] text-white px-8 py-4 rounded-xl hover:opacity-90 transition-opacity text-lg"
+                  >
+                    Explore our products
+                  </Link>
+                </div>
               </div>
 
-              {/* Content */}
-              <div className="relative h-full flex flex-col justify-center p-12 md:p-16">
-                <div className="max-w-2xl space-y-8">
-                  <h1 className="text-4xl md:text-6xl font-bold">
-                    <span className="text-white">Digital Dental</span><br />
-                    <span className="text-gray-900">Excellence</span>
-                  </h1>
-                  <Link 
-                    to="/contact" 
-                    className="inline-block border-2 border-white text-white px-12 py-3 rounded-md hover:bg-white hover:text-[#3B73F2] transition-colors text-lg"
-                  >
-                    Contact
-                  </Link>
+              {/* Right Image/Illustration */}
+              <div className="relative">
+                <div className="bg-white rounded-3xl shadow-xl p-6 transform rotate-2">
+                  <img 
+                    src="/hero-dental.jpg" 
+                    alt="Digital Dental Excellence" 
+                    className="w-full rounded-2xl"
+                  />
                 </div>
               </div>
             </div>
           </div>
+        </section>
+
+        {/* Why 3D Ocean Smile Section */}
+        <section className="relative">
+          {/* Top Background */}
+          <div className="h-40 bg-[#F2F7FF]"></div>
+          
+          {/* Main Content with Overlap */}
+          <div className="relative -mt-20">
+            <div className="container mx-auto px-4">
+              {/* White Content Box */}
+              <div className="bg-white rounded-3xl shadow-lg p-12 mb-16">
+                <div className="max-w-3xl mx-auto text-center mb-16">
+                  <span className="text-[#517CCD] text-sm font-semibold uppercase tracking-wider">Unmatched Quality in Digital Dentistry</span>
+                  <h2 className="text-4xl md:text-5xl font-bold text-[#0A2540] mt-4 mb-6">
+                    Why 3D Ocean Smile
+                  </h2>
+                 
+                </div>
+                
+                <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                  <div className="text-center">
+                    <div className="w-16 h-16 mx-auto mb-6 flex items-center justify-center">
+                      <i className="fas fa-microscope text-4xl text-[#517CCD]"></i>
+                    </div>
+                    <h3 className="text-xl font-bold text-[#0A2540] mb-4">
+                      Cutting-Edge Dental Solutions
+                    </h3>
+                    <p className="text-gray-600">
+                    3D Ocean Smile provides precise digital dental solutions with cutting-edge technology and innovation.
+                    </p>
+                  </div>
+
+                  <div className="text-center">
+                    <div className="w-16 h-16 mx-auto mb-6 flex items-center justify-center">
+                      <i className="fas fa-compass-drafting text-4xl text-[#517CCD]"></i>
+                    </div>
+                    <h3 className="text-xl font-bold text-[#0A2540] mb-4">
+                      Expert Craftsmanship
+                    </h3>
+                    <p className="text-gray-600">
+                    Since 2015, our expert team has crafted high-quality products with precision and care, ensuring client satisfaction and trust.
+                    </p>
+                  </div>
+
+                  <div className="text-center">
+                    <div className="w-16 h-16 mx-auto mb-6 flex items-center justify-center">
+                      <i className="fas fa-tooth text-4xl text-[#517CCD]"></i>
+                    </div>
+                    <h3 className="text-xl font-bold text-[#0A2540] mb-4">
+                    Comprehensive Dental Solutions
+                    </h3>
+                    <p className="text-gray-600">
+                    3D Ocean Smile provides a wide range of high-quality solutions, from Zirconia crowns to dental implants, tailored to diverse needs.
+                    </p>
+                  </div>
+
+                  <div className="text-center">
+                    <div className="w-16 h-16 mx-auto mb-6 flex items-center justify-center">
+                      <i className="fas fa-award text-4xl text-[#517CCD]"></i>
+                    </div>
+                    <h3 className="text-xl font-bold text-[#0A2540] mb-4">
+                      Dedicated to Excellence
+                    </h3>
+                    <p className="text-gray-600">
+                    We invest in dental implant research to deliver top-quality products and drive ongoing innovation.                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          {/* Bottom Background */}
+         
         </section>
 
         {/* About Section */}
@@ -58,17 +141,17 @@ const Home = () => {
               
               {/* Right side - Content */}
               <div className="space-y-6">
-                <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
-                  3D Ocean Smile
+                <h2 className="text-3xl md:text-4xl font-bold">
+                  About 3D Ocean Smile
                 </h2>
                 <p className="text-base md:text-lg text-gray-600 leading-relaxed">
                   Founded in 2015 as a certified milling center, 3D Ocean Smile takes pride in its skilled team and state-of-the-art in-house technology. Equipped with a milling machine, advanced CAM software, a scanner, and a 3D printer, we are dedicated to delivering top-tier products and services to our clients.
                 </p>
                 <Link 
                   to="/about"
-                  className="inline-flex items-center border-2 border-[#3a73f2] text-[#3a73f2] px-8 py-3 rounded-md hover:bg-[#3a73f2] hover:text-white transition-colors"
+                  className="inline-flex items-center border-2 border-[#517CCD] text-[#517CCD] px-8 py-3 rounded-md hover:bg-[#517CCD] hover:text-white transition-colors"
                   onClick={() => {
-                    window.scrollTo(0, 0); // Scroll to top when navigating
+                    window.scrollTo(0, 0);
                   }}
                 >
                   Who we are
@@ -91,122 +174,20 @@ const Home = () => {
           </div>
         </section>
 
-        {/* Why 3D Ocean Smile Section */}
-        <section className="py-16">
-          <div className="container mx-auto px-4">
-            <h2 className="text-4xl md:text-5xl font-bold text-center mb-20">
-              Why 3D Ocean Smile?
-            </h2>
-            
-            {/* Mobile Slider */}
-            <div className="md:hidden w-full overflow-x-auto snap-x snap-mandatory flex gap-4 pb-6 scrollbar-hide">
-              <div className="snap-center shrink-0 w-[80%] first:ml-[10%]">
-                <div className="bg-white rounded-lg shadow-lg p-8 h-full">
-                  <i className="fas fa-regular fa-microscope text-5xl text-[#3a73f2] block mb-6"></i>
-                  <h3 className="text-xl md:text-2xl font-bold text-[#3a73f2] mb-4">
-                    Cutting-Edge <br />Digital Dental Solutions
-                  </h3>
-                  <p className="text-sm md:text-base text-gray-600">
-                    3D Ocean Smile delivers high-precision digital dental solutions, empowering laboratories with advanced technology and innovation.
-                  </p>
-                </div>
-              </div>
-
-              <div className="snap-center shrink-0 w-[80%]">
-                <div className="bg-white rounded-lg shadow-lg p-8 h-full">
-                  <i className="fas fa-compass-drafting text-5xl text-[#3a73f2] block mb-6"></i>
-                  <h3 className="text-xl md:text-2xl font-bold text-[#3a73f2] mb-4">
-                    Expert Craftsmanship, <br />Exceptional Quality
-                  </h3>
-                  <p className="text-sm md:text-base text-gray-600">
-                    Since 2015, our skilled team has been dedicated to precision and excellence, 
-                    delivering high-quality products that ensure client satisfaction and trust.
-                  </p>
-                </div>
-              </div>
-
-              <div className="snap-center shrink-0 w-[80%]">
-                <div className="bg-white rounded-lg shadow-lg p-8 h-full">
-                  <i className="fas fa-tooth text-5xl text-[#3a73f2] block mb-6"></i>
-                  <h3 className="text-xl md:text-2xl font-bold text-[#3a73f2] mb-4">
-                    Wide-Ranging<br />Dental Solutions
-                  </h3>
-                  <p className="text-sm md:text-base text-gray-600">
-                    From Zirconia crowns to dental implants, 
-                    3D Ocean Smile offers a diverse selection of high-quality solutions tailored to meet various needs.
-                  </p>
-                </div>
-              </div>
-
-              <div className="snap-center shrink-0 w-[80%] last:mr-[10%]">
-                <div className="bg-white rounded-lg shadow-lg p-8 h-full">
-                  <i className="fas fa-award text-5xl text-[#3a73f2] block mb-6"></i>
-                  <h3 className="text-xl md:text-2xl font-bold text-[#3a73f2] mb-4">
-                    Dedicated to<br />Excellence
-                  </h3>
-                  <p className="text-sm md:text-base text-gray-600">
-                    With a forward-thinking approach, 
-                    we invest in dental implant research to deliver superior products and drive continuous innovation.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            {/* Desktop Grid */}
-            <div className="hidden md:grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-              <div className="bg-white rounded-lg shadow-lg p-8 h-full">
-                <i className="fas fa-regular fa-microscope text-5xl text-[#3a73f2] block mb-6"></i>
-                <h3 className="text-xl md:text-2xl font-bold text-[#3a73f2] mb-4">
-                  Cutting-Edge <br />Digital Dental Solutions
-                </h3>
-                <p className="text-sm md:text-base text-gray-600">
-                  3D Ocean Smile delivers high-precision digital dental solutions, empowering laboratories with advanced technology and innovation.
-                </p>
-              </div>
-
-              <div className="bg-white rounded-lg shadow-lg p-8 h-full">
-                <i className="fas fa-compass-drafting text-5xl text-[#3a73f2] block mb-6"></i>
-                <h3 className="text-xl md:text-2xl font-bold text-[#3a73f2] mb-4">
-                  Expert Craftsmanship, <br />Exceptional Quality
-                </h3>
-                <p className="text-sm md:text-base text-gray-600">
-                  Since 2015, our skilled team has been dedicated to precision and excellence, 
-                  delivering high-quality products that ensure client satisfaction and trust.
-                </p>
-              </div>
-
-              <div className="bg-white rounded-lg shadow-lg p-8 h-full">
-                <i className="fas fa-tooth text-5xl text-[#3a73f2] block mb-6"></i>
-                <h3 className="text-xl md:text-2xl font-bold text-[#3a73f2] mb-4">
-                  Wide-Ranging<br />Dental Solutions
-                </h3>
-                <p className="text-sm md:text-base text-gray-600">
-                  From Zirconia crowns to dental implants, 
-                  3D Ocean Smile offers a diverse selection of high-quality solutions tailored to meet various needs.
-                </p>
-              </div>
-
-              <div className="bg-white rounded-lg shadow-lg p-8 h-full">
-                <i className="fas fa-award text-5xl text-[#3a73f2] block mb-6"></i>
-                <h3 className="text-xl md:text-2xl font-bold text-[#3a73f2] mb-4">
-                  Dedicated to<br />Excellence
-                </h3>
-                <p className="text-sm md:text-base text-gray-600">
-                  With a forward-thinking approach, 
-                  we invest in dental implant research to deliver superior products and drive continuous innovation.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-
         {/* Technology Section */}
-        <section className="py-16 bg-[#cddbfa]">
+        <section className="py-16 bg-white">
           <div className="container mx-auto px-4">
-            <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-[#3a73f2]">
-              Technology
-            </h2>
-            <div className="grid md:grid-cols-3 gap-8">
+            <div className="max-w-3xl mx-auto text-center mb-16">
+              <span className="text-[#517CCD] text-sm font-semibold uppercase tracking-wider">
+                Advanced Digital Solutions
+              </span>
+              <h2 className="text-4xl md:text-5xl font-bold text-[#0A2540] mt-4 mb-6">
+                Our Technology
+              </h2>
+              
+            </div>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               {/* Modeless and Implants */}
               <div className="text-center space-y-4">
                 <div className="aspect-square">
@@ -216,7 +197,7 @@ const Home = () => {
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <h3 className="text-xl md:text-2xl font-bold text-[#3a73f2]">
+                <h3 className="text-xl md:text-2xl font-bold text-[#517CCD]">
                   Modeless Solutions &<br /> Custom Implants
                 </h3>
                 <p className="text-sm md:text-base text-gray-700">
@@ -233,7 +214,7 @@ const Home = () => {
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <h3 className="text-xl md:text-2xl font-bold text-[#3a73f2]">
+                <h3 className="text-xl md:text-2xl font-bold text-[#517CCD]">
                   Custom Abutment<br />ASC Solution
                 </h3>
                 <p className="text-sm md:text-base text-gray-700">
@@ -251,7 +232,7 @@ const Home = () => {
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <h3 className="text-xl md:text-2xl font-bold text-[#3a73f2]">
+                <h3 className="text-xl md:text-2xl font-bold text-[#517CCD]">
                   Custom All-on-X<br />Solution
                 </h3>
                 <p className="text-sm md:text-base text-gray-700">
@@ -259,13 +240,15 @@ const Home = () => {
                 and <br></br>Custom Multi-Unit Abutment solutions.
                 </p>
               </div>
+
+             
             </div>
 
             {/* More Information Button */}
             <div className="text-center mt-12">
               <Link 
                 to="/technology"
-                className="inline-flex items-center border-2 border-[#3a73f2] text-[#3a73f2] px-8 py-3 rounded-md hover:bg-[#3a73f2] hover:text-white transition-colors"
+                className="inline-flex items-center border-2 border-[#517CCD] text-[#517CCD] px-8 py-3 rounded-md hover:bg-[#517CCD] hover:text-white transition-colors"
               >
                 Learn more
                 <svg 
@@ -286,32 +269,33 @@ const Home = () => {
           </div>
         </section>
 
-        {/* Contact Section */}
-        <section className="hidden py-16 bg-gray-50">
-          <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-center mb-12">Contact Us</h2>
-            <div className="max-w-3xl mx-auto">
-              <ContactForm />
+     
+        {/* File Submission CTA Section */}
+        <section className="bg-[#6188D1] rounded-3xl mx-4 md:mx-8 overflow-hidden">
+          <div className="container mx-auto px-12 py-20">
+            <div className="flex flex-col md:flex-row justify-between items-center">
+              <div className="space-y-4 mb-8 md:mb-0">
+                <span className="text-[#c8d0ff] text-sm font-semibold uppercase tracking-wider">
+                  TRY IT NOW
+                </span>
+                <h2 className="text-4xl md:text-5xl font-bold text-white">
+                  Ready to submit your<br />
+                  orders and statements?
+                </h2>
+                
+              </div>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <a 
+                  href="https://forms.gle/ntzpFP33TfKBMLKg7"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="border border-white text-white px-8 py-4 rounded-xl hover:bg-white hover:text-[#6188D1] transition-colors inline-flex items-center"
+                >
+                  Get Started Now
+                </a>
+               
+              </div>
             </div>
-          </div>
-        </section>
-
-        {/* File Upload Section */}
-        <section id="file-upload-section" className="py-16 bg-gray-50">
-          <div className="container mx-auto px-4 text-center">
-            <h2 className="text-3xl font-bold mb-6">File Submission</h2>
-            <p className="text-sm md:text-base text-gray-600 mb-8">
-            
-              Simply click the button below to access the submission form and provide the required details. <br></br>Our team will review your request and get back to you promptly.
-            </p>
-            <a 
-              href="https://forms.gle/ntzpFP33TfKBMLKg7" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="inline-block bg-[#3a73f2] text-white px-8 py-3 rounded-md hover:bg-blue-700 transition-colors"
-            >
-              Click to begin
-            </a>
           </div>
         </section>
       </div>
