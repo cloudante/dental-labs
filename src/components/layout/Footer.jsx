@@ -54,7 +54,9 @@ const Footer = () => {
                 Instagram
               </a>
               <a 
-                href="tel:213-760-2550" 
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=crowns@3doceansmile.com&su=Inquiry from Website&body=Hello 3D Ocean Smile team,"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-gray-500 hover:text-[#3a73f2]"
               >
                 Contact
