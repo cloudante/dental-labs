@@ -5,84 +5,58 @@ import PageTransition from '../components/layout/PageTransition';
 const Terms = () => {
   useEffect(() => {
     setPageTitle('Terms of Service');
+    window.scrollTo(0, 0);
   }, []);
 
   return (
     <PageTransition>
-      <div className="py-16">
-        <div className="container mx-auto px-4">
-          <h1 className="text-3xl md:text-5xl font-bold mb-12">Terms of Service</h1>
-          
-          <div className="max-w-4xl mx-auto space-y-8">
-            {/* Introduction */}
-            <section className="space-y-4">
-              <h2 className="text-xl md:text-2xl font-bold text-[#3a73f2]">Introduction</h2>
-              <p className="text-sm md:text-base text-gray-600">
-                Welcome to 3D Ocean Smile. By accessing our website and using our services, 
-                you agree to comply with and be bound by the following terms and conditions.
+      <div>
+        <section className="py-16 bg-white">
+          <div className="container mx-auto px-4">
+            <h1 className="text-3xl md:text-5xl font-bold text-center mb-12">Terms of Service</h1>
+            <div className="max-w-4xl mx-auto text-base md:text-lg text-gray-700 space-y-6 mb-16">
+              <h2 className="text-2xl font-bold text-[#0A2540] mt-8 mb-4">1. Acceptance of Terms</h2>
+              <p>
+                By accessing and using 3D Ocean Smile's services, you agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use our services.
               </p>
-            </section>
 
-            {/* Services */}
-            <section className="space-y-4">
-              <h2 className="text-xl md:text-2xl font-bold text-[#3a73f2]">Services</h2>
-              <p className="text-sm md:text-base text-gray-600">
-                3D Ocean Smile provides digital dental solutions including but not limited to 
-                CAD/CAM services, custom dental implants, and related dental laboratory services. 
-                We reserve the right to modify, suspend, or discontinue any aspect of our services 
-                at any time.
+              <h2 className="text-2xl font-bold text-[#0A2540] mt-8 mb-4">2. Service Description</h2>
+              <p>
+                3D Ocean Smile provides digital dental laboratory services, including but not limited to CAD/CAM design, milling, and 3D printing services for dental professionals.
               </p>
-            </section>
 
-            {/* File Submission */}
-            <section className="space-y-4">
-              <h2 className="text-xl md:text-2xl font-bold text-[#3a73f2]">File Submission</h2>
-              <p className="text-sm md:text-base text-gray-600">
-                When submitting files for production, you agree that:
+              <h2 className="text-2xl font-bold text-[#0A2540] mt-8 mb-4">3. User Responsibilities</h2>
+              <p>
+                Users are responsible for providing accurate information and maintaining the confidentiality of their account information. Any misuse of services may result in immediate termination.
               </p>
-              <ul className="list-disc pl-6 text-gray-600 space-y-2">
-                <li>All submitted files meet our technical requirements</li>
-                <li>You have the right to use and submit these files</li>
-                <li>Files will be handled according to our standard procedures</li>
-                <li>Turnaround times are estimates and subject to change</li>
-              </ul>
-            </section>
 
-            {/* Quality and Warranty */}
-            <section className="space-y-4">
-              <h2 className="text-xl md:text-2xl font-bold text-[#3a73f2]">Quality and Warranty</h2>
-              <p className="text-sm md:text-base text-gray-600">
-                We strive to maintain the highest quality standards in all our products and services. 
-                Our warranty terms are specific to each product category and will be provided with 
-                your order details.
+              <h2 className="text-2xl font-bold text-[#0A2540] mt-8 mb-4">4. Intellectual Property</h2>
+              <p>
+                All content, designs, and materials created by 3D Ocean Smile remain the exclusive property of 3D Ocean Smile unless explicitly stated otherwise in writing.
               </p>
-            </section>
 
-            {/* Privacy */}
-            <section className="space-y-4">
-              <h2 className="text-xl md:text-2xl font-bold text-[#3a73f2]">Privacy</h2>
-              <p className="text-sm md:text-base text-gray-600">
-                Your privacy is important to us. We handle all information according to industry 
-                standards and best practices. For detailed information about how we handle your 
-                data, please contact us.
+              <h2 className="text-2xl font-bold text-[#0A2540] mt-8 mb-4">5. Privacy Policy</h2>
+              <p>
+                Our privacy practices are governed by our Privacy Policy, which is incorporated into these Terms of Service by reference.
               </p>
-            </section>
 
-            {/* Contact */}
-            <section className="space-y-4">
-              <h2 className="text-xl md:text-2xl font-bold text-[#3a73f2]">Contact</h2>
-              <p className="text-sm md:text-base text-gray-600">
-                If you have any questions about these Terms of Service, please contact us at{' '}
-                <a 
-                  href="mailto:crowns@3doceansmile.com" 
-                  className="text-[#3a73f2] hover:underline"
-                >
-                  crowns@3doceansmile.com
-                </a>
+              <h2 className="text-2xl font-bold text-[#0A2540] mt-8 mb-4">6. Limitation of Liability</h2>
+              <p>
+                3D Ocean Smile shall not be liable for any indirect, incidental, special, consequential, or punitive damages resulting from your use or inability to use our services.
               </p>
-            </section>
+
+              <h2 className="text-2xl font-bold text-[#0A2540] mt-8 mb-4">7. Changes to Terms</h2>
+              <p>
+                We reserve the right to modify these terms at any time. Continued use of our services following any changes constitutes acceptance of those changes.
+              </p>
+
+              <h2 className="text-2xl font-bold text-[#0A2540] mt-8 mb-4">8. Contact Information</h2>
+              <p>
+                For questions about these Terms of Service, please contact us at crowns@3doceansmile.com.
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
       </div>
     </PageTransition>
   );

@@ -74,7 +74,7 @@ const Product = () => {
         {/* CTA Section */}
         <section className="bg-[#6188D1] rounded-3xl mx-4 md:mx-8 overflow-hidden">
           <div className="container mx-auto px-12 py-20">
-            <div className="flex flex-col md:flex-row justify-between items-center">
+            <div className="block md:flex md:flex-row justify-between items-center">
               <div className="space-y-4 mb-8 md:mb-0">
                 <span className="text-[#c8d0ff] text-sm font-semibold uppercase tracking-wider">
                   TRY IT NOW
@@ -83,18 +83,19 @@ const Product = () => {
                   Ready to submit your<br />
                   orders and statements?
                 </h2>
-                
               </div>
-              <div className="flex flex-col sm:flex-row gap-4">
+              <div className="flex justify-start sm:justify-start">
                 <a 
                   href="https://forms.gle/ntzpFP33TfKBMLKg7"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="border border-white text-white px-8 py-4 rounded-xl hover:bg-white hover:text-[#6188D1] transition-colors inline-flex items-center"
+                  className="inline-flex items-center border border-white text-white px-8 py-4 rounded-xl hover:bg-white hover:text-[#6188D1] transition-colors"
                 >
                   Get Started Now
+                  <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                  </svg>
                 </a>
-               
               </div>
             </div>
           </div>

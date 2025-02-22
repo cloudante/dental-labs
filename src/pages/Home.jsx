@@ -11,7 +11,7 @@ const Home = () => {
 
   return (
     <PageTransition>
-      <div className="min-h-screen">
+    <div className="min-h-screen">
         {/* Hero Section */}
         <section className="py-24 bg-[#F2F7FF] relative overflow-hidden">
           {/* Background Pattern */}
@@ -21,7 +21,7 @@ const Home = () => {
             <div className="grid md:grid-cols-2 gap-16 items-center">
               {/* Left Content */}
               <div className="space-y-8">
-                <h1 className="text-5xl md:text-7xl font-bold text-[#0A2540] leading-tight">
+                <h1 className="text-5xl md:text-6xl font-bold text-[#0A2540] leading-tight">
                   Digital Dental<br />
                   Excellence
                 </h1>
@@ -36,7 +36,7 @@ const Home = () => {
                     Explore our products
                   </Link>
                 </div>
-              </div>
+          </div>
 
               {/* Right Image/Illustration */}
               <div className="relative">
@@ -47,10 +47,10 @@ const Home = () => {
                     className="w-full rounded-2xl"
                   />
                 </div>
-              </div>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
         {/* Why 3D Ocean Smile Section */}
         <section className="relative">
@@ -59,12 +59,12 @@ const Home = () => {
           
           {/* Main Content with Overlap */}
           <div className="relative -mt-20">
-            <div className="container mx-auto px-4">
+        <div className="container mx-auto px-4">
               {/* White Content Box */}
               <div className="bg-white rounded-3xl shadow-lg p-12 mb-16">
                 <div className="max-w-3xl mx-auto text-center mb-16">
                   <span className="text-[#517CCD] text-sm font-semibold uppercase tracking-wider">Unmatched Quality in Digital Dentistry</span>
-                  <h2 className="text-4xl md:text-5xl font-bold text-[#0A2540] mt-4 mb-6">
+                  <h2 className="text-3xl md:text-4xl font-bold text-[#0A2540] mt-4 mb-6">
                     Why 3D Ocean Smile
                   </h2>
                  
@@ -116,12 +116,12 @@ const Home = () => {
                     </h3>
                     <p className="text-gray-600">
                     We invest in dental implant research to deliver top-quality products and drive ongoing innovation.                    </p>
-                  </div>
-                </div>
-              </div>
+          </div>
+          </div>
+        </div>
             </div>
           </div>
-          
+
           {/* Bottom Background */}
          
         </section>
@@ -170,18 +170,18 @@ const Home = () => {
                   </svg>
                 </Link>
               </div>
-            </div>
           </div>
-        </section>
+        </div>
+      </section>
 
         {/* Technology Section */}
         <section className="py-16 bg-white">
-          <div className="container mx-auto px-4">
+        <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto text-center mb-16">
               <span className="text-[#517CCD] text-sm font-semibold uppercase tracking-wider">
                 Advanced Digital Solutions
               </span>
-              <h2 className="text-4xl md:text-5xl font-bold text-[#0A2540] mt-4 mb-6">
+              <h2 className="text-3xl md:text-4xl font-bold text-[#0A2540] mt-4 mb-6">
                 Our Technology
               </h2>
               
@@ -203,7 +203,7 @@ const Home = () => {
                 <p className="text-sm md:text-base text-gray-700">
                   High-precision milling for Zirconia, metal, composites, and more
                 </p>
-              </div>
+          </div>
 
               {/* Custom Abutment */}
               <div className="text-center space-y-4">
@@ -266,14 +266,14 @@ const Home = () => {
                 </svg>
               </Link>
             </div>
-          </div>
-        </section>
+        </div>
+      </section>
 
      
-        {/* File Submission CTA Section */}
+        {/* CTA Section */}
         <section className="bg-[#6188D1] rounded-3xl mx-4 md:mx-8 overflow-hidden">
           <div className="container mx-auto px-12 py-20">
-            <div className="flex flex-col md:flex-row justify-between items-center">
+            <div className="block md:flex md:flex-row justify-between items-center">
               <div className="space-y-4 mb-8 md:mb-0">
                 <span className="text-[#c8d0ff] text-sm font-semibold uppercase tracking-wider">
                   TRY IT NOW
@@ -282,23 +282,24 @@ const Home = () => {
                   Ready to submit your<br />
                   orders and statements?
                 </h2>
-                
               </div>
-              <div className="flex flex-col sm:flex-row gap-4">
+              <div className="flex justify-start sm:justify-start">
                 <a 
                   href="https://forms.gle/ntzpFP33TfKBMLKg7"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="border border-white text-white px-8 py-4 rounded-xl hover:bg-white hover:text-[#6188D1] transition-colors inline-flex items-center"
+                  className="inline-flex items-center border border-white text-white px-8 py-4 rounded-xl hover:bg-white hover:text-[#6188D1] transition-colors"
                 >
                   Get Started Now
+                  <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                  </svg>
                 </a>
-               
               </div>
-            </div>
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
+    </div>
     </PageTransition>
   );
 };
