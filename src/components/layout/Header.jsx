@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../../assets/3doceansmile.svg';  // Fix: Use ../../ to go up two levels
+import logo from '../../assets/3doceansmile_v2.svg';  // Fix: Use ../../ to go up two levels
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -29,7 +29,7 @@ const Header = () => {
             <img 
               src={logo} 
               alt="3D Ocean Smile" 
-              className="h-40 w-auto"
+              className="h-16 w-auto"
             />
           </Link>
 

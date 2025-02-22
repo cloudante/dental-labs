@@ -16,7 +16,7 @@ export default {
         'church-gray': '#F5F5F5',  // For light backgrounds
       },
       fontFamily: {
-        sans: ['Noto Sans KR', 'sans-serif'],  // For Korean text support
+        sans: ['Raleway', 'sans-serif'],
       },
       aspectRatio: {
         'video': '16 / 9',
