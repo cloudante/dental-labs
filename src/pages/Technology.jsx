@@ -63,8 +63,10 @@ const Technology = () => {
             Meet 3D Ocean Smile's<br />
             CAD/CAM specialists today
           </h2>
-          <Link 
-            to="/contact"
+          <a 
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=crowns@3doceansmile.com&su=Inquiry from Website&body=Hello 3D Ocean Smile team,"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center border-2 border-[#3a73f2] text-[#3a73f2] px-8 py-3 rounded-md hover:bg-[#3a73f2] hover:text-white transition-colors"
           >
             Contact Us
@@ -81,7 +83,7 @@ const Technology = () => {
                 d="M9 5l7 7-7 7"
               />
             </svg>
-          </Link>
+          </a>
         </div>
       </section>
     </div>
