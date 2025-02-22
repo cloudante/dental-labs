@@ -1,7 +1,12 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { setPageTitle } from '../utils/setPageTitle';
 
 const About = () => {
+  useEffect(() => {
+    setPageTitle('About Us');
+  }, []);
+
   return (
     <div className="min-h-screen">
       {/* Hero Section */}

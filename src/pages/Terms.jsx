@@ -1,6 +1,11 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { setPageTitle } from '../utils/setPageTitle';
 
 const Terms = () => {
+  useEffect(() => {
+    setPageTitle('Terms of Service');
+  }, []);
+
   return (
     <div className="py-16">
       <div className="container mx-auto px-4">

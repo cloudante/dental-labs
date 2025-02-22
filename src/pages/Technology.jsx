@@ -1,11 +1,13 @@
 import React, { useEffect } from 'react';
 import { useLocation, Link } from 'react-router-dom';
+import { setPageTitle } from '../utils/setPageTitle';
 
 const Technology = () => {
   const location = useLocation();
 
   useEffect(() => {
     window.scrollTo(0, 0);
+    setPageTitle('Technology');
   }, [location]);
 
   return (
