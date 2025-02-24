@@ -46,11 +46,11 @@ const Home = () => {
 
               {/* Right Image/Illustration */}
               <div className="relative">
-                <div className="bg-white rounded-3xl shadow-xl p-6 transform rotate-2">
+                <div className="transform rotate-2 overflow-hidden rounded-3xl shadow-xl">
                   <img 
                     src={heroImage} 
                     alt="Digital Dental Solutions"
-                    className="w-full h-full object-cover"
+                    className="w-full object-contain"
                   />
                 </div>
             </div>
@@ -188,7 +188,7 @@ const Home = () => {
                 Advanced Digital Solutions
               </span>
               <h2 className="text-3xl md:text-4xl font-bold text-[#0A2540] mt-4 mb-6">
-                Our Specialities
+                Our Specialties
               </h2>
               
             </div>
@@ -253,7 +253,7 @@ const Home = () => {
             {/* More Information Button */}
             <div className="text-center mt-12">
               <Link 
-                to="/specialities"
+                to="/specialties"
                 className="inline-flex items-center border-2 border-[#517CCD] text-[#517CCD] px-8 py-3 rounded-md hover:bg-[#517CCD] hover:text-white transition-colors"
               >
                 Learn more
