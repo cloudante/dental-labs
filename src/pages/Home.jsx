@@ -3,6 +3,12 @@ import { Link } from 'react-router-dom';
 import { setPageTitle } from '../utils/setPageTitle';
 import PageTransition from '../components/layout/PageTransition';
 import logo from '../assets/3doceansmile_v2.svg';
+import heroImage from '../assets/digital_dental_solution.jpeg';
+import aboutImage from '../assets/about_3d_oceansmile.jpeg';
+import technologyImage1 from '../assets/modeless_solution.jpeg';
+import technologyImage2 from '../assets/custom_abutment.jpeg';
+import technologyImage3 from '../assets/custom_Allonx.jpeg';
+
 
 const Home = () => {
   useEffect(() => {
@@ -42,9 +48,9 @@ const Home = () => {
               <div className="relative">
                 <div className="bg-white rounded-3xl shadow-xl p-6 transform rotate-2">
                   <img 
-                    src="/hero-dental.jpg" 
-                    alt="Digital Dental Excellence" 
-                    className="w-full rounded-2xl"
+                    src={heroImage} 
+                    alt="Digital Dental Solutions"
+                    className="w-full h-full object-cover"
                   />
                 </div>
             </div>
@@ -133,7 +139,7 @@ const Home = () => {
               {/* Left side - Image */}
               <div className="relative h-[400px] md:h-[500px]">
                 <img 
-                  src="/dental-closeup.jpg" 
+                  src={aboutImage}
                   alt="Dental Work Closeup" 
                   className="w-full h-full object-cover rounded-lg shadow-lg"
                 />
@@ -182,7 +188,7 @@ const Home = () => {
                 Advanced Digital Solutions
               </span>
               <h2 className="text-3xl md:text-4xl font-bold text-[#0A2540] mt-4 mb-6">
-                Our Technology
+                Our Specialities
               </h2>
               
             </div>
@@ -192,7 +198,7 @@ const Home = () => {
               <div className="text-center space-y-4">
                 <div className="aspect-square">
                   <img 
-                    src="/modeless-implants.jpg" 
+                    src={technologyImage1} 
                     alt="Modeless and Implants" 
                     className="w-full h-full object-cover"
                   />
@@ -209,7 +215,7 @@ const Home = () => {
               <div className="text-center space-y-4">
                 <div className="aspect-square">
                   <img 
-                    src="/custom-abutment.jpg" 
+                    src={technologyImage2} 
                     alt="Custom Abutment ASC Solution" 
                     className="w-full h-full object-cover"
                   />
@@ -227,7 +233,7 @@ const Home = () => {
               <div className="text-center space-y-4">
                 <div className="aspect-square">
                   <img 
-                    src="/all-on-x.jpg" 
+                    src={technologyImage3} 
                     alt="Custom All on X Solution" 
                     className="w-full h-full object-cover"
                   />
@@ -247,7 +253,7 @@ const Home = () => {
             {/* More Information Button */}
             <div className="text-center mt-12">
               <Link 
-                to="/technology"
+                to="/specialities"
                 className="inline-flex items-center border-2 border-[#517CCD] text-[#517CCD] px-8 py-3 rounded-md hover:bg-[#517CCD] hover:text-white transition-colors"
               >
                 Learn more
