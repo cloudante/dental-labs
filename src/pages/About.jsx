@@ -21,7 +21,7 @@ const About = () => {
                 3D Ocean Smile, based in Southern California, specializes in precision-driven digital dental solutions, helping laboratories stay at the forefront of innovation.
               </p>
               <p>
-                Founded in 2015 as an accredited milling center, we take pride in our highly experienced team and cutting-edge in-house technology.
+                Founded in 2018 as an accredited milling center, we take pride in our highly experienced team and cutting-edge in-house technology.
               </p>
             </div>
 

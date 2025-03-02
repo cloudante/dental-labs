@@ -3,11 +3,11 @@ import { Link } from 'react-router-dom';
 import { setPageTitle } from '../utils/setPageTitle';
 import PageTransition from '../components/layout/PageTransition';
 import logo from '../assets/3doceansmile_v2.svg';
-import heroImage from '../assets/digital_dental_solution.jpeg';
+import heroImage from '../assets/dental.png';
 import aboutImage from '../assets/about_3d_oceansmile.jpeg';
-import technologyImage1 from '../assets/modeless_solution.jpeg';
-import technologyImage2 from '../assets/custom_abutment.jpeg';
-import technologyImage3 from '../assets/custom_Allonx.jpeg';
+import technologyImage1 from '../assets/modeless.png';
+import technologyImage2 from '../assets/abutment.png';
+import technologyImage3 from '../assets/allonx.png';
 
 
 const Home = () => {
@@ -23,10 +23,10 @@ const Home = () => {
           {/* Background Pattern */}
           <div className="absolute inset-0 bg-[url('/pattern-bg.svg')] opacity-5"></div>
           
-          <div className="container mx-auto px-4 relative">
-            <div className="grid md:grid-cols-2 gap-16 items-center">
+          <div className="container mx-auto px-2">
+            <div className="grid md:grid-cols-2 gap-4 items-center">
               {/* Left Content */}
-              <div className="space-y-8">
+              <div className="space-y-8 px-4">
                 <h1 className="text-5xl md:text-6xl font-bold text-[#0A2540] leading-tight">
                   Digital Dental<br />
                   Excellence
@@ -46,11 +46,11 @@ const Home = () => {
 
               {/* Right Image/Illustration */}
               <div className="relative">
-                <div className="transform rotate-2 overflow-hidden rounded-3xl shadow-xl">
+                <div className="rounded-3xl shadow-xl overflow-hidden">
                   <img 
                     src={heroImage} 
                     alt="Digital Dental Solutions"
-                    className="w-full object-contain"
+                    className="w-full h-[400px] md:h-[800px] object-cover"
                   />
                 </div>
             </div>
@@ -97,7 +97,7 @@ const Home = () => {
                       Expert Craftsmanship
                     </h3>
                     <p className="text-gray-600">
-                    Since 2015, our expert team has crafted high-quality products with precision and care, ensuring client satisfaction and trust.
+                    Since 2018, our expert team has crafted high-quality products with precision and care, ensuring client satisfaction and trust.
                     </p>
                   </div>
 
@@ -235,7 +235,7 @@ const Home = () => {
                   <img 
                     src={technologyImage3} 
                     alt="Custom All on X Solution" 
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-fill"
                   />
                 </div>
                 <h3 className="text-xl md:text-2xl font-bold text-[#517CCD]">
