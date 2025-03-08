@@ -2,6 +2,10 @@ import React, { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import { setPageTitle } from '../utils/setPageTitle';
 import PageTransition from '../components/layout/PageTransition';
+import technologyImage1 from '../assets/modeless.png';
+import technologyImage2 from '../assets/abutment.png';
+import technologyImage3 from '../assets/allonx.png';
+import technologyImage5 from '../assets/ioscan.png';
 
 const Specialties = () => {
   const location = useLocation();
@@ -61,22 +65,22 @@ const Specialties = () => {
             {/* Desktop Grid */}
             <div className="hidden md:grid md:grid-cols-2 lg:grid-cols-4 gap-8">
               <TechnologyCard
-                image="/modeless-implants.jpg"
+                image={technologyImage1}
                 title="Modeless and Implants"
                 description="Specializing in the fabrication of custom dental implants with precision and expertise."
               />
               <TechnologyCard
-                image="/custom-abutment.jpg"
+                image={technologyImage2}
                 title="Custom Abutment ASC"
                 description="Offering up to 25° adjustable custom abutment solutions for optimal fit and functionality."
               />
               <TechnologyCard
-                image="/all-on-x.jpg"
+                image={technologyImage3}
                 title="Custom All on X Solution"
                 description="Explore our Custom Location and Multi-Unit Abutment options for the perfect All-on-X fit."
               />
               <TechnologyCard
-                image="/io-scan.jpg"
+                image={technologyImage5}
                 title="IO Scan for ALL-on-X"
                 description="Accurately capture All-on-X MUA and gingiva data for seamless, precise CAD design."
               />

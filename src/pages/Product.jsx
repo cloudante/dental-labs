@@ -2,6 +2,9 @@ import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { setPageTitle } from '../utils/setPageTitle';
 import PageTransition from '../components/layout/PageTransition';
+import technologyImage1 from '../assets/modeless.png';
+import technologyImage2 from '../assets/abutment.png';
+import technologyImage4 from '../assets/3d.jpeg';
 
 const Product = () => {
   useEffect(() => {
@@ -16,38 +19,29 @@ const Product = () => {
         <section className="py-16 bg-white">
           <div className="container mx-auto px-4">
             {/* Grid Container */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-              {/* Large Item */}
-              <div className="lg:col-span-2 lg:row-span-2">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              {/* First Row */}
+              <div>
                 <ProductCard
-                  image="/zirconia-crown.jpg"
+                  image={technologyImage1}
                   title="Zirconia Crown"
                   description="Durable, high-strength crowns crafted for natural aesthetics and long-lasting performance."
                 />
               </div>
 
-              {/* Regular Items */}
               <div>
                 <ProductCard
-                  image="/custom-abutment-product.jpg"
+                  image={technologyImage2}
                   title="Custom Abutment"
                   description="Precision-engineered abutments tailored for a perfect fit and optimal functionality."
                 />
               </div>
 
+              {/* Second Row */}
               <div>
                 <ProductCard
-                  image="/all-on-x-product.jpg"
-                  title="All-on-X"
-                  description="Full-arch restoration solutions offering superior stability and a natural look."
-                />
-              </div>
-
-              {/* Bottom Row - 3 Equal Columns */}
-              <div>
-                <ProductCard
-                  image="/hybrid-denture.jpg"
-                  title="Hybrid Denture"
+                  image={technologyImage4}
+                  title="3D Print Model"
                   description="Innovative hybrid prosthetics combining the benefits of fixed and removable solutions."
                 />
               </div>
@@ -57,14 +51,6 @@ const Product = () => {
                   image="/implant-bar.jpg"
                   title="Implant Bar"
                   description="Custom-designed implant bars ensuring secure and comfortable full-arch restorations."
-                />
-              </div>
-
-              <div>
-                <ProductCard
-                  image="/full-denture.jpg"
-                  title="Full Denture"
-                  description="High-quality full dentures designed for exceptional comfort, function, and aesthetics."
                 />
               </div>
             </div>
@@ -105,27 +91,34 @@ const Product = () => {
   );
 };
 
-const ProductCard = ({ image, title, description }) => (
-  <div className="relative group rounded-lg overflow-hidden">
-    {/* Image Container */}
-    <div className="aspect-square bg-black">
-      <img 
-        src={image} 
-        alt={title} 
-        className="w-full h-full object-cover"
-      />
-    </div>
-    
-    {/* Overlay that appears on hover */}
-    <div className="absolute inset-0 bg-black bg-opacity-70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center p-6">
-      <h3 className="text-lg md:text-xl font-bold mb-4 text-white">
-        {title}
-      </h3>
-      <p className="text-sm md:text-base text-gray-200">
-        {description}
-      </p>
-    </div>
-  </div>
-);
+const ProductCard = ({ image, title, description }) => {
+  // Convert title to slug format
+  const slug = title.toLowerCase().replace(/\s+/g, '-');
+  
+  return (
+    <Link to={`/product/${slug}`} className="block">
+      <div className="relative group rounded-lg overflow-hidden">
+        {/* Image Container */}
+        <div className="aspect-square bg-black">
+          <img 
+            src={image} 
+            alt={title} 
+            className="w-full h-full object-cover"
+          />
+        </div>
+        
+        {/* Overlay that appears on hover */}
+        <div className="absolute inset-0 bg-black bg-opacity-70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center p-6">
+          <h3 className="text-lg md:text-xl font-bold mb-4 text-white">
+            {title}
+          </h3>
+          <p className="text-sm md:text-base text-gray-200">
+            {description}
+          </p>
+        </div>
+      </div>
+    </Link>
+  );
+};
 
 export default Product; 

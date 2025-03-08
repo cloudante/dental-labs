@@ -8,6 +8,7 @@ import Specialties from './pages/Specialties'
 import Product from './pages/Product'
 import Contact from './pages/Contact'
 import Terms from './pages/Terms'
+import ProductDetail from './pages/ProductDetail'
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/product" element={<Product />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/terms" element={<Terms />} />
+          <Route path="/product/:slug" element={<ProductDetail />} />
           {/* Add other routes as needed */}
         </Routes>
       </main>
