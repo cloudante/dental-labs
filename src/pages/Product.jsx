@@ -19,8 +19,8 @@ const Product = () => {
         <section className="py-16 bg-white">
           <div className="container mx-auto px-4">
             {/* Grid Container */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              {/* First Row */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+              {/* Products Row */}
               <div>
                 <ProductCard
                   image={technologyImage1}
@@ -37,20 +37,11 @@ const Product = () => {
                 />
               </div>
 
-              {/* Second Row */}
               <div>
                 <ProductCard
                   image={technologyImage4}
                   title="3D Print Model"
                   description="Innovative hybrid prosthetics combining the benefits of fixed and removable solutions."
-                />
-              </div>
-
-              <div>
-                <ProductCard
-                  image="/implant-bar.jpg"
-                  title="Implant Bar"
-                  description="Custom-designed implant bars ensuring secure and comfortable full-arch restorations."
                 />
               </div>
             </div>
@@ -67,7 +58,7 @@ const Product = () => {
                 </span>
                 <h2 className="text-4xl md:text-5xl font-bold text-white">
                   Ready to submit your<br />
-                  orders and statements?
+                  orders and statem`ents?
                 </h2>
               </div>
               <div className="flex justify-start sm:justify-start">

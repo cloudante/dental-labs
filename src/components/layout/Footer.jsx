@@ -37,8 +37,8 @@ const Footer = () => {
           <div>
             <h3 className="text-black font-semibold mb-4">Contact</h3>
             <ul className="space-y-2 text-gray-500">
-              <li>7372 Walnut Ave Suite X</li>
-              <li>Buena Park, CA, 90620</li>
+              <li>9750 Katella Avenue</li>
+              <li>Garden Grove, CA, 92804</li>
               <li><a href="mailto:crowns@3doceansmile.com" className="hover:text-[#517CCD]">crowns@3doceansmile.com</a></li>
               <li><a href="tel:213-760-2550" className="hover:text-[#517CCD]">213-760-2550</a></li>
             </ul>
@@ -46,9 +46,19 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-gray-300 pt-8">
-          <p className="text-gray-500 text-center">
-            ©3D Ocean Smile {new Date().getFullYear()}. All Rights Reserved.
-          </p>
+          <div className="flex justify-between items-center">
+            <p className="text-gray-500 text-center">
+              ©3D Ocean Smile {new Date().getFullYear()}. All Rights Reserved.
+            </p>
+            <a
+              href="https://www.instagram.com/3doceansmile/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-400 hover:text-[#6188D1] transition-colors"
+            >
+              <i className="fab fa-instagram text-xl"></i>
+            </a>
+          </div>
         </div>
       </div>
     </footer>

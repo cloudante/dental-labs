@@ -43,14 +43,24 @@ const Header = () => {
 
           {/* File Submissions Button */}
           <div className="hidden md:flex items-center">
-            <a 
-              href="https://forms.gle/ntzpFP33TfKBMLKg7"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center border-2 border-[#4070C9] text-[#4070C9] px-6 py-2 rounded-md hover:bg-[#4475F2] hover:text-white transition-colors"
-            >
-              File Submissions
-            </a>
+            <div className="flex items-center space-x-4">
+              <a
+                href="https://www.instagram.com/3doceansmile/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-600 hover:text-[#6188D1] transition-colors"
+              >
+                <i className="fab fa-instagram text-xl"></i>
+              </a>
+              <a
+                href="https://forms.gle/ntzpFP33TfKBMLKg7"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-[#6188D1] text-white px-4 py-2 rounded-lg hover:bg-[#4F73B3] transition-colors"
+              >
+                File Submission
+              </a>
+            </div>
           </div>
 
           {/* Mobile Menu Button */}
