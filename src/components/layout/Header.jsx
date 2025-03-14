@@ -20,13 +20,27 @@ const Header = () => {
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
-          <Link to="/" className="flex items-start">
-            <img 
-              src={logo} 
-              alt="3D Ocean Smile" 
-              className="h-16 w-auto"
-            />
+          <Link to="/" className="flex items-center">
+            <img src={logo} alt="3D Ocean Smile" className="h-12" />
           </Link>
+
+          {/* Mobile view - Instagram and Menu icons */}
+          <div className="flex items-center space-x-4 md:hidden">
+            <a
+              href="https://www.instagram.com/3doceansmile/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-600 hover:text-[#6188D1] transition-colors"
+            >
+              <i className="fab fa-instagram text-xl"></i>
+            </a>
+            <button
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              className="text-gray-600 hover:text-gray-900"
+            >
+              <i className="fas fa-bars text-xl"></i>
+            </button>
+          </div>
 
           {/* Desktop Menu */}
           <nav className="hidden md:flex space-x-8">
@@ -62,28 +76,6 @@ const Header = () => {
               </a>
             </div>
           </div>
-
-          {/* Mobile Menu Button */}
-          <button
-            className="md:hidden p-2"
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-          >
-            <svg
-              className="w-6 h-6"
-              fill="none"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              {isMenuOpen ? (
-                <path d="M6 18L18 6M6 6l12 12" />
-              ) : (
-                <path d="M4 6h16M4 12h16M4 18h16" />
-              )}
-            </svg>
-          </button>
         </div>
 
         {/* Mobile Menu */}
