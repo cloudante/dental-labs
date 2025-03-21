@@ -124,17 +124,60 @@ const ProductDetail = () => {
             <p className="text-gray-600 max-w-3xl mb-12">{product.description}</p>
             
             {/* Image Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              {product.images.map((image, index) => (
-                <div key={index} className="rounded-lg overflow-hidden">
-                  <img 
-                    src={image}
-                    alt={`${product.title} - Detail ${index + 1}`}
-                    className="w-full aspect-square object-cover"
-                  />
-                </div>
-              ))}
-            </div>
+            {slug === 'zirconia-crown' && (
+              <div className="grid grid-cols-2 gap-4">
+                {product.images.map((image, index) => (
+                  <div key={index} className="relative group aspect-square">
+                    <img
+                      src={image}
+                      alt={`Zirconia Crown ${index + 1}`}
+                      className="w-full h-full object-cover rounded-lg absolute inset-0"
+                    />
+                    <div className="absolute inset-0 bg-black bg-opacity-70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center p-4 rounded-lg">
+                      <h3 className="text-white text-lg font-bold mb-2">
+                        {index === 0 && "HT Zirconia"}
+                        {index === 1 && "Inlay & Onlay"}
+                        {index === 2 && "Veneers"}
+                        {index === 3 && "3M Lava"}
+                      </h3>
+                      <p className="text-gray-200 text-sm">
+                        {index === 0 && "High translucency zirconia, known for its aesthetic qualities and durability, is often used in dental restorations such as crowns and bridges."}
+                        {index === 1 && "Dental restorations that are custom-made to fit within or on top of a damaged tooth, providing strength and restoring function and appearance."}
+                        {index === 2 && "Thin layers of material, typically porcelain or composite resin, bonded to the front surface of teeth to improve appearance and correct imperfections."}
+                        {index === 3 && "A dental restoration that uses a 3M Lava material, which is a high-strength, durable material that is used to restore teeth."}
+                      </p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            )}
+
+            {/* Custom Abutment Section */}
+            {slug === 'custom-abutment' && (
+              <div className="grid grid-cols-2 gap-4">
+                {product.images.map((image, index) => (
+                  <div key={index} className="relative group aspect-square">
+                    <img
+                      src={image}
+                      alt={`Custom Abutment ${index + 1}`}
+                      className="w-full h-full object-cover rounded-lg absolute inset-0"
+                    />
+                    <div className="absolute inset-0 bg-black bg-opacity-70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center p-4 rounded-lg">
+                      <h3 className="text-white text-lg font-bold mb-2">
+                        {index === 0 && "Screw Retained Implant Crown"}
+                        {index === 1 && "Titanium Abutment"}
+                        {index === 2 && "Zirconia Hybrid"}
+                      </h3>
+                      <p className="text-gray-200 text-sm">
+                        {index === 0 && "A dental restoration where a crown is securely attached to an implant using a screw, providing stability and ease of removal for adjustments."}
+                        {index === 1 && "A metal connector used in dental implants to attach the crown or prosthetic to the implant fixture, known for its strength and biocompatibility."}
+                        {index === 2 && "A dental restoration combining the strength and durability of zirconia with the aesthetics of a tooth-colored material, often used in full-arch prosthetics and hybrid dentures."}
+                      </p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            )}
           </div>
         </section>
         
