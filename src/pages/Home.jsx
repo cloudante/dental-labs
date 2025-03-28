@@ -28,19 +28,21 @@ const Home = () => {
               {/* Left Content */}
               <div className="space-y-8 px-4">
                 <h1 className="text-5xl md:text-6xl font-bold text-[#0A2540] leading-tight">
-                  Digital Dental<br />
-                  Excellence
+                 3D Dental<br />
+                  Solutions
                 </h1>
                 <p className="text-lg text-gray-600 max-w-lg">
-                  Empowering dental laboratories with precision-driven digital solutions, advanced technology, and innovative processes.
+                  Once you try us, you will stay with us.
                 </p>
                 <div className="space-y-6">
-                  <Link 
-                    to="/product" 
-                    className="inline-block bg-[#4070C9] text-white px-8 py-4 rounded-xl hover:opacity-90 transition-opacity text-lg"
-                  >
-                    Explore our products
-                  </Link>
+                  <div className="relative z-10">
+                    <Link 
+                      to="/product" 
+                      className="inline-block bg-[#4070C9] text-white px-8 py-4 rounded-xl hover:opacity-90 transition-opacity text-lg cursor-pointer"
+                    >
+                      Explore our products
+                    </Link>
+                  </div>
                 </div>
           </div>
 
@@ -97,7 +99,7 @@ const Home = () => {
                       Expert Craftsmanship
                     </h3>
                     <p className="text-gray-600">
-                    Since 2018, our expert team has crafted high-quality products with precision and care, ensuring client satisfaction and trust.
+                    Mr. Han has been a dental technician since 2004 with his diverse experience, he is here to meet your needs.
                     </p>
                   </div>
 
@@ -204,10 +206,10 @@ const Home = () => {
                   />
                 </div>
                 <h3 className="text-xl md:text-2xl font-bold text-[#517CCD]">
-                  Modeless Solutions &<br /> Custom Implants
+                  Zirconia Crown &<br /> Inlay Onlay
                 </h3>
                 <p className="text-sm md:text-base text-gray-700">
-                  High-precision milling for Zirconia, metal, composites, and more
+                  High-precision milling for Zirconia, 3M Lava, and more.
                 </p>
           </div>
 
@@ -221,11 +223,11 @@ const Home = () => {
                   />
                 </div>
                 <h3 className="text-xl md:text-2xl font-bold text-[#517CCD]">
-                  Custom Abutment<br />ASC Solution
+                  Custom Abutment<br />with Screw Retained Crown
                 </h3>
                 <p className="text-sm md:text-base text-gray-700">
-                Offering up to 25° adjustable custom abutment solutions 
-                <br></br>for optimal fit and functionality.
+                Offering a diverse range of implant systems
+                <br></br>that ensure accuracy and fit.
                 </p>
               </div>
 
@@ -239,11 +241,11 @@ const Home = () => {
                   />
                 </div>
                 <h3 className="text-xl md:text-2xl font-bold text-[#517CCD]">
-                  Custom All-on-X<br />Solution
+                  Modeless<br />Solution
                 </h3>
                 <p className="text-sm md:text-base text-gray-700">
-                Experience precision with our Custom Location 
-                and <br></br>Custom Multi-Unit Abutment solutions.
+                High-resolution 3D moduels utilizing advanced pixel
+                <br></br>technology for enhanced accuracy.
                 </p>
               </div>
 
@@ -286,7 +288,7 @@ const Home = () => {
                 </span>
                 <h2 className="text-4xl md:text-5xl font-bold text-white">
                   Ready to submit your<br />
-                  orders and statements?
+                 digital case?
                 </h2>
               </div>
               <div className="flex justify-start sm:justify-start">

@@ -21,7 +21,7 @@ const Footer = () => {
             <ul className="space-y-2">
               <li><Link to="/product" className="text-gray-500 hover:text-[#517CCD]">Products</Link></li>
               <li><Link to="/specialties" className="text-gray-500 hover:text-[#517CCD]">Specialties</Link></li>
-              <li><a href="https://forms.gle/ntzpFP33TfKBMLKg7" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-[#517CCD]">File Submissions</a></li>
+              <li><a href="https://forms.gle/ntzpFP33TfKBMLKg7" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-[#517CCD]">File Upload</a></li>
             </ul>
           </div>
 
@@ -50,14 +50,17 @@ const Footer = () => {
             <p className="text-gray-500 text-center">
               ©3D Ocean Smile {new Date().getFullYear()}. All Rights Reserved.
             </p>
-            <a
-              href="https://www.instagram.com/3doceansmile/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-400 hover:text-[#6188D1] transition-colors"
-            >
-              <i className="fab fa-instagram text-xl"></i>
-            </a>
+            <div className="flex items-center space-x-2">
+              <a
+                href="https://www.instagram.com/3doceansmile/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-500 hover:text-[#6188D1] transition-colors flex items-center gap-2"
+              >
+                <i className="fab fa-instagram text-3xl"></i>
+                <span>Instagram</span>
+              </a>
+            </div>
           </div>
         </div>
       </div>

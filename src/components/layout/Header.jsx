@@ -22,7 +22,7 @@ const Header = () => {
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center">
-            <img src={logo} alt="3D Ocean Smile" className="h-12" />
+            <img src={logo} alt="3D Ocean Smile" className="h-16" />
           </Link>
 
           {/* Mobile view - Instagram and Menu icons */}
@@ -65,7 +65,7 @@ const Header = () => {
                 rel="noopener noreferrer"
                 className="text-gray-600 hover:text-[#6188D1] transition-colors"
               >
-                <i className="fab fa-instagram text-xl"></i>
+                <i className="fab fa-instagram text-3xl"></i>
               </a>
               <a
                 href="https://forms.gle/ntzpFP33TfKBMLKg7"
@@ -73,7 +73,7 @@ const Header = () => {
                 rel="noopener noreferrer"
                 className="bg-[#6188D1] text-white px-4 py-2 rounded-lg hover:bg-[#4F73B3] transition-colors"
               >
-                File Submission
+                File Upload
               </a>
             </div>
           </div>

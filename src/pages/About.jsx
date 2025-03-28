@@ -21,7 +21,7 @@ const About = () => {
                 3D Ocean Smile, based in Southern California, specializes in precision-driven digital dental solutions, helping laboratories stay at the forefront of innovation.
               </p>
               <p>
-                Founded in 2018 as an accredited milling center, we take pride in our highly experienced team and cutting-edge in-house technology.
+                Founded in 2015 as an accredited milling center, we take pride in our highly experienced team and cutting-edge in-house technology.
               </p>
             </div>
 
@@ -56,10 +56,7 @@ const About = () => {
                       </h3>
                     </div>
                     <ul className="text-left text-gray-600 space-y-2">
-                      <li className="flex items-start">
-                        <span className="text-[#517CCD] mr-2">•</span>
-                        Tailored treatment planning
-                      </li>
+                      
                       <li className="flex items-start">
                         <span className="text-[#517CCD] mr-2">•</span>
                         3D modeling and digital design enhancement
@@ -68,10 +65,7 @@ const About = () => {
                         <span className="text-[#517CCD] mr-2">•</span>
                         Custom implant and abutment design
                       </li>
-                      <li className="flex items-start">
-                        <span className="text-[#517CCD] mr-2">•</span>
-                        All-on-X custom design solutions
-                      </li>
+                     
                     </ul>
                   </div>
 
@@ -89,10 +83,7 @@ const About = () => {
                         <span className="text-[#517CCD] mr-2">•</span>
                         High-precision milling for Zirconia, metal, composites, and more
                       </li>
-                      <li className="flex items-start">
-                        <span className="text-[#517CCD] mr-2">•</span>
-                        3D printing for night guards, surgical guides, and other custom products
-                      </li>
+                      
                       <li className="flex items-start">
                         <span className="text-[#517CCD] mr-2">•</span>
                         Post-milling finishing and polishing
@@ -131,21 +122,21 @@ const About = () => {
                         <i className="fas fa-gears text-2xl text-[#517CCD]"></i>
                       </div>
                       <h3 className="text-xl font-bold text-[#0A2540] mt-4">
-                        All-on-X Solutions
+                        Accurate Due Date
                       </h3>
                     </div>
                     <ul className="text-left text-gray-600 space-y-2">
                       <li className="flex items-start">
                         <span className="text-[#517CCD] mr-2">•</span>
-                        Overview and advantages of All-on-X
+                       Full crown: 5 Working Days
                       </li>
                       <li className="flex items-start">
                         <span className="text-[#517CCD] mr-2">•</span>
-                        Custom All-on-X design and implant placement
+                        Implant crown: 7 Working Days
                       </li>
                       <li className="flex items-start">
                         <span className="text-[#517CCD] mr-2">•</span>
-                        Full process support from start to finish
+                        There's no charge for rush cases
                       </li>
                     </ul>
                   </div>

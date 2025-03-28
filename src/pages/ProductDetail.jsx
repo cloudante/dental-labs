@@ -191,7 +191,7 @@ const ProductDetail = () => {
                 </span>
                 <h2 className="text-4xl md:text-5xl font-bold text-white">
                   Ready to submit your<br />
-                  orders and statements?
+                  digital case?
                 </h2>
               </div>
               <div className="flex justify-start sm:justify-start">

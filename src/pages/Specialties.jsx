@@ -66,23 +66,23 @@ const Specialties = () => {
             <div className="hidden md:grid md:grid-cols-2 lg:grid-cols-4 gap-8">
               <TechnologyCard
                 image={technologyImage1}
-                title="Modeless and Implants"
-                description="Specializing in the fabrication of custom dental implants with precision and expertise."
+                title="Zirconia Crown & Inlay Onlay"
+                description="High-precision milling for Zirconia, 3M Lava, and more."
               />
               <TechnologyCard
                 image={technologyImage2}
-                title="Custom Abutment ASC"
-                description="Offering up to 25° adjustable custom abutment solutions for optimal fit and functionality."
+                title="Custom Abutment with Screw Retained Crown"
+                description="Offering a diverse range of implant systems that ensure accuracy and fit."
               />
               <TechnologyCard
                 image={technologyImage3}
-                title="Custom All on X Solution"
-                description="Explore our Custom Location and Multi-Unit Abutment options for the perfect All-on-X fit."
+                title="Modeless Solution"
+                description="High-resolution 3D moduels utilizing advanced pixel technology for enhanced accuracy."
               />
               <TechnologyCard
                 image={technologyImage5}
-                title="IO Scan for ALL-on-X"
-                description="Accurately capture All-on-X MUA and gingiva data for seamless, precise CAD design."
+                title="Inaly & Onlay "
+                description="Improved tooth stability and integrity, Natural-looking restoration, Durable materials for long-lasting benefits, High-grade materials."
               />
             </div>
           </div>
@@ -130,7 +130,14 @@ const TechnologyCard = ({ image, title, description }) => (
     </div>
     <div className="p-6">
       <h3 className="text-lg md:text-xl font-bold mb-4 text-[#3a73f2]">{title}</h3>
-      <p className="text-sm md:text-base text-gray-600">{description}</p>
+      <ul className="text-sm md:text-base text-gray-600 space-y-2">
+        {description.split(', ').map((point, index) => (
+          <li key={index} className="flex items-start">
+            <span className="text-[#517CCD] mr-2">•</span>
+            {point}
+          </li>
+        ))}
+      </ul>
     </div>
   </div>
 );
