@@ -27,12 +27,14 @@ const Home = () => {
             <div className="grid md:grid-cols-2 gap-4 items-center">
               {/* Left Content */}
               <div className="space-y-8 px-4">
-                <h1 className="text-5xl md:text-6xl font-bold text-[#0A2540] leading-tight">
+                <h1 className="text-7xl md:text-8xl font-bold text-[#0A2540] leading-tight">
                  3D Dental<br />
                   Solutions
                 </h1>
-                <p className="text-lg text-gray-600 max-w-lg">
-                  Once you try us, you will stay with us.
+                <p className="text-2xl text-gray-600 max-w-lg">
+                  "Once you try us, you will stay with us."
+                  <br></br>
+                  -Mr. Han
                 </p>
                 <div className="space-y-6">
                   <div className="relative z-10">

@@ -5,7 +5,7 @@ import PageTransition from '../components/layout/PageTransition';
 import technologyImage1 from '../assets/modeless.png';
 import technologyImage2 from '../assets/abutment.png';
 import technologyImage3 from '../assets/allonx.png';
-import technologyImage5 from '../assets/inlayonlay.jpeg';
+import technologyImage5 from '../assets/inlay_v2.jpeg';
 
 const Specialties = () => {
   const location = useLocation();

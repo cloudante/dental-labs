@@ -38,7 +38,7 @@ const Footer = () => {
             <h3 className="text-black font-semibold mb-4">Contact</h3>
             <ul className="space-y-2 text-gray-500">
               <li>9750 Katella Avenue</li>
-              <li>Garden Grove, CA, 92804</li>
+              <li>Anaheim, CA, 92804</li>
               <li><a href="mailto:crowns@3doceansmile.com" className="hover:text-[#517CCD]">crowns@3doceansmile.com</a></li>
               <li><a href="tel:213-760-2550" className="hover:text-[#517CCD]">213-760-2550</a></li>
             </ul>

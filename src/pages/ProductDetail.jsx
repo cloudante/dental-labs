@@ -178,6 +178,25 @@ const ProductDetail = () => {
                 ))}
               </div>
             )}
+
+            {/* 3D Print Model Section */}
+            {slug === '3d-print-model' && (
+              <div className="grid grid-cols-2 gap-4">
+                {product.images.map((image, index) => (
+                  <div key={index} className="relative group aspect-square">
+                    <img
+                      src={image}
+                      alt={`3D Print Model ${index + 1}`}
+                      className="w-full h-full object-cover rounded-lg absolute inset-0"
+                    />
+                    <div className="absolute inset-0 bg-black bg-opacity-70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center p-4 rounded-lg">
+                      
+                      
+                    </div>
+                  </div>
+                ))}
+              </div>
+            )}
           </div>
         </section>
         
