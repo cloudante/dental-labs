@@ -5,6 +5,7 @@ import PageTransition from '../components/layout/PageTransition';
 import technologyImage1 from '../assets/modeless.png';
 import technologyImage2 from '../assets/abutment.png';
 import technologyImage3 from '../assets/allonx.png';
+import technologyImage4 from '../assets/3d.jpeg';
 import technologyImage5 from '../assets/inlay_v2.jpeg';
 
 const Specialties = () => {
@@ -17,79 +18,115 @@ const Specialties = () => {
 
   return (
     <PageTransition>
-      <div>
-        <section className="py-16 bg-white">
-          <div className="container mx-auto px-4">
-            <h1 className="text-4xl md:text-5xl font-bold text-center mb-12">Specialties</h1>
-            <div className="max-w-4xl mx-auto text-base md:text-lg text-gray-700 space-y-6 mb-20">
-              <p>
-                3D Ocean Smile harnesses advanced digital technology to deliver precision-driven dental solutions. With state-of-the-art equipment and innovative processes, we guarantee top-quality results for each client.
-              </p>
-              <p>
-                From cutting-edge CAD/CAM systems to the latest 3D printing technology, we are committed to ongoing investments in top-tier tools and training, ensuring we remain leaders in digital dentistry.
-              </p>
-            </div>
-            
-            {/* Mobile Slider */}
-            <div className="md:hidden w-full overflow-x-auto snap-x snap-mandatory flex gap-4 pb-6 scrollbar-hide">
-              <div className="snap-center shrink-0 w-[80%] first:ml-[10%]">
-                <TechnologyCard
-                  image="/modeless-implants.jpg"
-                  title="Modeless and Implants"
-                  description="Specializing in the fabrication of custom dental implants with precision and expertise."
-                />
-              </div>
-              <div className="snap-center shrink-0 w-[80%]">
-                <TechnologyCard
-                  image="/custom-abutment.jpg"
-                  title="Custom Abutment ASC"
-                  description="Offering up to 25° adjustable custom abutment solutions for optimal fit and functionality."
-                />
-              </div>
-              <div className="snap-center shrink-0 w-[80%]">
-                <TechnologyCard
-                  image="/all-on-x.jpg"
-                  title="Custom All on X Solution"
-                  description="Explore our Custom Location and Multi-Unit Abutment options for the perfect All-on-X fit."
-                />
-              </div>
-              <div className="snap-center shrink-0 w-[80%] last:mr-[10%]">
-                <TechnologyCard
-                  image="/io-scan.jpg"
-                  title="IO Scan for ALL-on-X"
-                  description="Accurately capture All-on-X MUA and gingiva data for seamless, precise CAD design."
-                />
-              </div>
-            </div>
+      <div className="container mx-auto px-4 py-16">
+        <h1 className="text-4xl md:text-5xl font-bold text-center mb-8">Specialties</h1>
+        <p className="text-gray-600 max-w-3xl mx-auto mb-8">
+          3D Ocean Smile harnesses advanced digital technology to deliver precision-driven dental solutions. With state-of-the-art equipment and innovative processes, we guarantee top-quality results for each client.
+        </p>
+        <p className="text-gray-600 max-w-3xl mx-auto mb-12">
+          From cutting-edge CAD/CAM systems to the latest 3D printing technology, we are committed to ongoing investments in top-tier tools and training, ensuring we remain leaders in digital dentistry.
+        </p>
 
-            {/* Desktop Grid */}
-            <div className="hidden md:grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-              <TechnologyCard
-                image={technologyImage1}
-                title="Zirconia Crown & Inlay Onlay"
-                description="High-precision milling for Zirconia, 3M Lava, and more."
+        {/* Cards Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="bg-gray-50 rounded-lg overflow-hidden shadow">
+            <div className="h-56 sm:h-64 w-full overflow-hidden">
+              <img 
+                src={technologyImage1} 
+                alt="Modeless and Implants" 
+                className="w-full h-full object-cover"
               />
-              <TechnologyCard
-                image={technologyImage2}
-                title="Custom Abutment with Screw Retained Crown"
-                description="Offering a diverse range of implant systems that ensure accuracy and fit."
-              />
-              <TechnologyCard
-                image={technologyImage3}
-                title="Modeless Solution"
-                description="High-resolution 3D moduels utilizing advanced pixel technology for enhanced accuracy."
-              />
-              <TechnologyCard
-                image={technologyImage5}
-                title="Inaly & Onlay "
-                description="Improved tooth stability and integrity, Natural-looking restoration, Durable materials for long-lasting benefits, High-grade materials."
-              />
+            </div>
+            <div className="p-6">
+              <h3 className="text-lg font-bold mb-4 text-[#3a73f2]">Modeless and Implants</h3>
+              <ul className="text-sm text-gray-600 space-y-2">
+                <li className="flex items-start">
+                  <span className="text-[#517CCD] mr-2">•</span>
+                  Specializing in the fabrication of custom dental implants with precision and expertise.
+                </li>
+              </ul>
             </div>
           </div>
-        </section>
 
-        {/* CTA Section */}
-        <section className="bg-[#6188D1] rounded-3xl mx-4 md:mx-8 overflow-hidden">
+          {/* Custom Abutment */}
+          <div className="bg-gray-50 rounded-lg overflow-hidden shadow">
+            <div className="h-56 sm:h-64 w-full overflow-hidden">
+              <img 
+                src={technologyImage2} 
+                alt="Custom Abutment" 
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <div className="p-6">
+              <h3 className="text-lg font-bold mb-4 text-[#3a73f2]">Custom Abutment</h3>
+              <ul className="text-sm text-gray-600 space-y-2">
+                <li className="flex items-start">
+                  <span className="text-[#517CCD] mr-2">•</span>
+                  Precision-engineered abutments
+                </li>
+                <li className="flex items-start">
+                  <span className="text-[#517CCD] mr-2">•</span>
+                  Perfect fit guarantee
+                </li>
+                <li className="flex items-start">
+                  <span className="text-[#517CCD] mr-2">•</span>
+                  Biocompatible materials
+                </li>
+              </ul>
+            </div>
+          </div>
+          
+          {/* All-on-X Solution */}
+          <div className="bg-gray-50 rounded-lg overflow-hidden shadow">
+            <div className="h-56 sm:h-64 w-full overflow-hidden">
+              <img 
+                src={technologyImage3} 
+                alt="All-on-X Solution" 
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <div className="p-6">
+              <h3 className="text-lg font-bold mb-4 text-[#3a73f2]">All-on-X Solution</h3>
+              <ul className="text-sm text-gray-600 space-y-2">
+                <li className="flex items-start">
+                  <span className="text-[#517CCD] mr-2">•</span>
+                  Full-arch restoration with implant-supported prostheses
+                </li>
+                <li className="flex items-start">
+                  <span className="text-[#517CCD] mr-2">•</span>
+                  Custom design for optimal fit and function
+                </li>
+              </ul>
+            </div>
+          </div>
+          
+          {/* Inlays & Onlays */}
+          <div className="bg-gray-50 rounded-lg overflow-hidden shadow">
+            <div className="h-56 sm:h-64 w-full overflow-hidden">
+              <img 
+                src={technologyImage5} 
+                alt="Inlays & Onlays" 
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <div className="p-6">
+              <h3 className="text-lg font-bold mb-4 text-[#3a73f2]">Inlays & Onlays</h3>
+              <ul className="text-sm text-gray-600 space-y-2">
+                <li className="flex items-start">
+                  <span className="text-[#517CCD] mr-2">•</span>
+                  Precision-crafted restorations for damaged teeth
+                </li>
+                <li className="flex items-start">
+                  <span className="text-[#517CCD] mr-2">•</span>
+                  Conservative alternative to full crowns
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        {/* Contact Section */}
+        <section className="bg-[#6188D1] rounded-3xl mx-4 md:mx-8 overflow-hidden mt-16">
           <div className="container mx-auto px-12 py-20">
             <div className="block md:flex md:flex-row justify-between items-center">
               <div className="space-y-4 mb-8 md:mb-0">
@@ -118,28 +155,5 @@ const Specialties = () => {
     </PageTransition>
   );
 };
-
-const TechnologyCard = ({ image, title, description }) => (
-  <div className="bg-gray-50 rounded-lg overflow-hidden h-full">
-    <div className="aspect-square">
-      <img 
-        src={image} 
-        alt={title} 
-        className="w-full h-full object-cover"
-      />
-    </div>
-    <div className="p-6">
-      <h3 className="text-lg md:text-xl font-bold mb-4 text-[#3a73f2]">{title}</h3>
-      <ul className="text-sm md:text-base text-gray-600 space-y-2">
-        {description.split(', ').map((point, index) => (
-          <li key={index} className="flex items-start">
-            <span className="text-[#517CCD] mr-2">•</span>
-            {point}
-          </li>
-        ))}
-      </ul>
-    </div>
-  </div>
-);
 
 export default Specialties;

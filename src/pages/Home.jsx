@@ -32,9 +32,9 @@ const Home = () => {
                   Solutions
                 </h1>
                 <p className="text-2xl text-gray-600 max-w-lg">
-                  "Once you try us, you will stay with us."
-                  <br></br>
-                  -Mr. Han
+                  Once you try us, <br>
+                  </br>you will stay with us.
+                 
                 </p>
                 <div className="space-y-6">
                   <div className="relative z-10">
