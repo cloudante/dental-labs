@@ -131,13 +131,6 @@ const Header = () => {
                 >
                   File Submissions
                 </a>
-                <Link
-                  to="/contact"
-                  className="text-xl text-gray-600 hover:text-[#6188D1] transition-colors"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  Contact
-                </Link>
               </div>
             </div>
           </div>

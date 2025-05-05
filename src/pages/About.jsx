@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { setPageTitle } from '../utils/setPageTitle';
 import PageTransition from '../components/layout/PageTransition';
+import cover1 from '../assets/cover1.svg';
 
 const About = () => {
   useEffect(() => {
@@ -24,8 +25,29 @@ const About = () => {
                 Founded in 2015 as an accredited milling center, we take pride in our highly experienced team and cutting-edge in-house technology.
               </p>
             </div>
+          </div>
+        </section>
 
-    
+        {/* About Us Expanded Section */}
+        <section className="bg-white py-12">
+          <div className="container mx-auto px-4">
+            <div className="flex flex-col md:flex-row items-center gap-8">
+              <div className="max-w-4xl md:w-1/2 text-base md:text-lg text-gray-700">
+                <p className="leading-relaxed">
+                  3D OCEAN SMILE, based in Southern California, offers precise digital dental solutions. Since 2015, our experienced team and advanced in-house equipment milling machines, CAM software, scanners, and 3D printers enable us to deliver high-quality, reliable products quickly.
+                </p>
+                <p className="leading-relaxed mt-4">
+                  Committed to ongoing research, particularly in dental implant technology, we ensure our solutions stay at the forefront of innovation and quality. Partner with us to elevate your practice with consistent, top-tier digital dentistry.
+                </p>
+              </div>
+              <div className="md:w-1/2 flex justify-center">
+                <img 
+                  src={cover1} 
+                  alt="3D Ocean Smile Technology" 
+                  className="max-w-full h-auto rounded-lg shadow-md"
+                />
+              </div>
+            </div>
           </div>
         </section>
 

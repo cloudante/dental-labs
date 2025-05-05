@@ -38,12 +38,11 @@ const Specialties = () => {
               />
             </div>
             <div className="p-6">
-              <h3 className="text-lg font-bold mb-4 text-[#3a73f2]">Modeless and Implants</h3>
+              <h3 className="text-lg font-bold mb-4 text-[#3a73f2]">Zirconia Crown and Inlay Onlay</h3>
               <ul className="text-sm text-gray-600 space-y-2">
                 <li className="flex items-start">
-                  <span className="text-[#517CCD] mr-2">•</span>
-                  Specializing in the fabrication of custom dental implants with precision and expertise.
-                </li>
+                  
+High-precision milling for Zirconia, 3M LAVA and more                </li>
               </ul>
             </div>
           </div>
@@ -58,20 +57,13 @@ const Specialties = () => {
               />
             </div>
             <div className="p-6">
-              <h3 className="text-lg font-bold mb-4 text-[#3a73f2]">Custom Abutment</h3>
+              <h3 className="text-lg font-bold mb-4 text-[#3a73f2]">Custom Abutment with Screw Retained Crown</h3>
               <ul className="text-sm text-gray-600 space-y-2">
                 <li className="flex items-start">
-                  <span className="text-[#517CCD] mr-2">•</span>
-                  Precision-engineered abutments
+                  
+                  Offering a diverse range of implant systems that ensure accuracy and fit
                 </li>
-                <li className="flex items-start">
-                  <span className="text-[#517CCD] mr-2">•</span>
-                  Perfect fit guarantee
-                </li>
-                <li className="flex items-start">
-                  <span className="text-[#517CCD] mr-2">•</span>
-                  Biocompatible materials
-                </li>
+             
               </ul>
             </div>
           </div>
@@ -86,16 +78,12 @@ const Specialties = () => {
               />
             </div>
             <div className="p-6">
-              <h3 className="text-lg font-bold mb-4 text-[#3a73f2]">All-on-X Solution</h3>
+              <h3 className="text-lg font-bold mb-4 text-[#3a73f2]">Modeless Solutions</h3>
               <ul className="text-sm text-gray-600 space-y-2">
                 <li className="flex items-start">
-                  <span className="text-[#517CCD] mr-2">•</span>
-                  Full-arch restoration with implant-supported prostheses
-                </li>
-                <li className="flex items-start">
-                  <span className="text-[#517CCD] mr-2">•</span>
-                  Custom design for optimal fit and function
-                </li>
+                
+High-resolution 3D models utilizing advanced pixel technology for enhanced accuracy                </li>
+               
               </ul>
             </div>
           </div>
