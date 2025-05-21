@@ -12,49 +12,55 @@ import technologyImage3 from '../assets/allonx.png';
 
 const Home = () => {
   useEffect(() => {
-    setPageTitle('Home');
-    window.scrollTo(0, 0);
+    setPageTitle(''); // Empty for home page to just show "3D Ocean Smile"
   }, []);
 
   return (
     <PageTransition>
-      <div className="bg-white">
+    <div className="min-h-screen">
         {/* Hero Section */}
-        <section className="py-16 md:py-24 bg-[#F2F7FF]">
-          <div className="container mx-auto px-4">
-            <div className="flex flex-col md:flex-row items-center">
-              <div className="md:w-1/2 mb-12 md:mb-0">
-                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#0A2540] mb-6">
-                  Digital Dental Solutions
+        <section className="py-24 bg-[#F2F7FF] relative overflow-hidden">
+          {/* Background Pattern */}
+          <div className="absolute inset-0 bg-[url('/pattern-bg.svg')] opacity-5"></div>
+          
+          <div className="container mx-auto px-2">
+            <div className="grid md:grid-cols-2 gap-4 items-center">
+              {/* Left Content */}
+              <div className="space-y-8 px-4">
+                <h1 className="text-7xl md:text-8xl font-bold text-[#0A2540] leading-tight">
+                 3D Dental<br />
+                  Solutions
                 </h1>
-                <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-lg">
-                  Precision-driven digital dental solutions helping laboratories stay at the forefront of innovation.
+                <p className="text-2xl text-gray-600 max-w-lg">
+                  Once you try us, <br>
+                  </br>you will stay with us.
+                 
                 </p>
-                <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
-                  <Link
-                    to="/product"
-                    className="bg-[#6188D1] text-white px-8 py-3 rounded-xl hover:bg-[#4F73B3] transition-colors inline-block text-center"
-                  >
-                    Our Products
-                  </Link>
-                  <Link
-                    to="/contact"
-                    className="border border-[#6188D1] text-[#6188D1] px-8 py-3 rounded-xl hover:bg-[#EBF1FF] transition-colors inline-block text-center"
-                  >
-                    Contact Us
-                  </Link>
+                <div className="space-y-6">
+                  <div className="relative z-10">
+                    <Link 
+                      to="/product" 
+                      className="inline-block bg-[#4070C9] text-white px-8 py-4 rounded-xl hover:opacity-90 transition-opacity text-lg cursor-pointer"
+                    >
+                      Explore our products
+                    </Link>
+                  </div>
                 </div>
-              </div>
-              <div className="md:w-1/2">
-                <img
-                  src="/hero-image.jpg"
-                  alt="Digital Dental Solutions"
-                  className="rounded-xl shadow-lg w-full"
-                />
-              </div>
+          </div>
+
+              {/* Right Image/Illustration */}
+              <div className="relative">
+                <div className="rounded-3xl shadow-xl overflow-hidden">
+                  <img 
+                    src={heroImage} 
+                    alt="Digital Dental Solutions"
+                    className="w-full h-[400px] md:h-[800px] object-cover"
+                  />
+                </div>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
         {/* Why 3D Ocean Smile Section */}
         <section className="relative">
