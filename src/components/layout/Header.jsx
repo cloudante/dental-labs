@@ -129,7 +129,7 @@ const Header = () => {
                   className="text-xl text-[#4070C9] hover:text-[#4070C9]"
                   onClick={() => setIsMenuOpen(false)}
                 >
-                  File Submissions
+                  File Upload
                 </a>
               </div>
             </div>

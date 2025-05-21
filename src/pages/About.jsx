@@ -14,19 +14,7 @@ const About = () => {
     <PageTransition>
       <div>
         {/* Main Content Section */}
-        <section className="py-16 bg-white">
-          <div className="container mx-auto px-4">
-            <h1 className="text-4xl md:text-5xl font-bold text-center mb-12">About Us</h1>
-            <div className="max-w-4xl mx-auto text-base md:text-lg text-gray-700 space-y-6 mb-16">
-              <p>
-                3D Ocean Smile, based in Southern California, specializes in precision-driven digital dental solutions, helping laboratories stay at the forefront of innovation.
-              </p>
-              <p>
-                Founded in 2015 as an accredited milling center, we take pride in our highly experienced team and cutting-edge in-house technology.
-              </p>
-            </div>
-          </div>
-        </section>
+        
 
         {/* About Us Expanded Section */}
         <section className="bg-white py-12">
